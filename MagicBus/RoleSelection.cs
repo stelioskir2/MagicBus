@@ -45,5 +45,16 @@ namespace MagicBus
         {
 
         }
+
+        private void RoleSelection_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Welcome welcomeForm = new Welcome();
+            welcomeForm.Show();
+            this.Close();
+        }
     }
 }

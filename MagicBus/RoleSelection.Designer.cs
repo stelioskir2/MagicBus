@@ -32,6 +32,7 @@
             btnPassenger = new Button();
             btnDriver = new Button();
             btnEmployee = new Button();
+            btnBack = new Button();
             SuspendLayout();
             // 
             // label1
@@ -39,7 +40,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.MidnightBlue;
-            label1.Location = new Point(224, 31);
+            label1.Location = new Point(334, 42);
             label1.Name = "label1";
             label1.Size = new Size(309, 37);
             label1.TabIndex = 0;
@@ -52,7 +53,7 @@
             btnPassenger.FlatStyle = FlatStyle.Flat;
             btnPassenger.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             btnPassenger.ForeColor = Color.White;
-            btnPassenger.Location = new Point(238, 84);
+            btnPassenger.Location = new Point(348, 114);
             btnPassenger.Name = "btnPassenger";
             btnPassenger.Size = new Size(280, 80);
             btnPassenger.TabIndex = 1;
@@ -65,7 +66,7 @@
             btnDriver.FlatStyle = FlatStyle.Flat;
             btnDriver.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             btnDriver.ForeColor = Color.White;
-            btnDriver.Location = new Point(238, 195);
+            btnDriver.Location = new Point(348, 226);
             btnDriver.Name = "btnDriver";
             btnDriver.Size = new Size(280, 80);
             btnDriver.TabIndex = 2;
@@ -78,24 +79,39 @@
             btnEmployee.FlatStyle = FlatStyle.Flat;
             btnEmployee.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             btnEmployee.ForeColor = Color.White;
-            btnEmployee.Location = new Point(238, 306);
+            btnEmployee.Location = new Point(348, 338);
             btnEmployee.Name = "btnEmployee";
             btnEmployee.Size = new Size(280, 80);
             btnEmployee.TabIndex = 3;
             btnEmployee.Text = "Υπάλληλος / Προσωπικό";
             btnEmployee.UseVisualStyleBackColor = false;
             // 
+            // btnBack
+            // 
+            btnBack.BackColor = SystemColors.Control;
+            btnBack.Font = new Font("Segoe UI", 10F);
+            btnBack.ForeColor = Color.Black;
+            btnBack.Location = new Point(12, 521);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(190, 45);
+            btnBack.TabIndex = 4;
+            btnBack.Text = "Επιστροφή στην αρχική";
+            btnBack.UseVisualStyleBackColor = true;
+            btnBack.Click += btnBack_Click;
+            // 
             // RoleSelection
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(984, 611);
+            Controls.Add(btnBack);
             Controls.Add(btnEmployee);
             Controls.Add(btnDriver);
             Controls.Add(btnPassenger);
             Controls.Add(label1);
             Name = "RoleSelection";
             Text = "Επιλογή Ρόλου";
+            Load += RoleSelection_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -106,5 +122,6 @@
         private Button btnPassenger;
         private Button btnDriver;
         private Button btnEmployee;
+        private Button btnBack;
     }
 }

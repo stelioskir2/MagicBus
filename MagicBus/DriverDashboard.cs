@@ -37,5 +37,10 @@ namespace MagicBus
             roleForm.Show();
             this.Close();
         }
+
+        private void DriverDashboard_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

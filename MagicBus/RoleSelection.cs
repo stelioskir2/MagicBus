@@ -56,5 +56,11 @@ namespace MagicBus
             welcomeForm.Show();
             this.Close();
         }
+
+        private void btnPassenger_Click_1(object sender, EventArgs e)
+        {
+            using PassengerHome passengerForm = new PassengerHome();
+            passengerForm.ShowDialog(this);
+        }
     }
 }

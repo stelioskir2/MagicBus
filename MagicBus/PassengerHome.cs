@@ -57,5 +57,11 @@ namespace MagicBus
             using LostItems lostItems = new LostItems();
             lostItems.ShowDialog(this);
         }
+
+        private void btnCafe_Click(object sender, EventArgs e)
+        {
+            using CafeSelection cafe = new CafeSelection();
+            cafe.ShowDialog(this);
+        }
     }
 }

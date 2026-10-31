@@ -36,6 +36,7 @@
             btnAttractions = new Button();
             btnLost = new Button();
             lblLostNotification = new Label();
+            btnCafe = new Button();
             SuspendLayout();
             // 
             // lblTitle
@@ -145,12 +146,27 @@
             lblLostNotification.Text = "Υπάρχουν νέα ευρήματα";
             lblLostNotification.Visible = false;
             // 
+            // btnCafe
+            // 
+            btnCafe.BackColor = Color.MidnightBlue;
+            btnCafe.FlatStyle = FlatStyle.Flat;
+            btnCafe.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 161);
+            btnCafe.ForeColor = Color.White;
+            btnCafe.Location = new Point(350, 390);
+            btnCafe.Name = "btnCafe";
+            btnCafe.Size = new Size(280, 100);
+            btnCafe.TabIndex = 8;
+            btnCafe.Text = "Παραγγελία από καφετέρια";
+            btnCafe.UseVisualStyleBackColor = false;
+            btnCafe.Click += btnCafe_Click;
+            // 
             // PassengerHome
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(982, 603);
+            Controls.Add(btnCafe);
             Controls.Add(lblLostNotification);
             Controls.Add(btnLost);
             Controls.Add(btnAttractions);
@@ -177,5 +193,6 @@
         private Button btnAttractions;
         private Button btnLost;
         private Label lblLostNotification;
+        private Button btnCafe;
     }
 }

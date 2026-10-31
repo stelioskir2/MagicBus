@@ -30,8 +30,9 @@
         {
             label1 = new Label();
             btnPassenger = new Button();
+            btnDriver = new Button();
+            btnEmployee = new Button();
             btnBack = new Button();
-            btnStaffLogin = new Button();
             SuspendLayout();
             // 
             // label1
@@ -39,11 +40,12 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.MidnightBlue;
-            label1.Location = new Point(334, 42);
+            label1.Location = new Point(382, 56);
             label1.Name = "label1";
             label1.Size = new Size(384, 46);
             label1.TabIndex = 0;
             label1.Text = "Επιλέξτε Ρόλο Χρήστη";
+            label1.Click += label1_Click;
             // 
             // btnPassenger
             // 
@@ -51,12 +53,14 @@
             btnPassenger.FlatStyle = FlatStyle.Flat;
             btnPassenger.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             btnPassenger.ForeColor = Color.White;
-            btnPassenger.Location = new Point(348, 114);
+            btnPassenger.Location = new Point(398, 152);
+            btnPassenger.Margin = new Padding(3, 4, 3, 4);
             btnPassenger.Name = "btnPassenger";
             btnPassenger.Size = new Size(320, 107);
             btnPassenger.TabIndex = 1;
             btnPassenger.Text = "Επιβάτης";
             btnPassenger.UseVisualStyleBackColor = false;
+            btnPassenger.Click += btnPassenger_Click_1;
             // 
             // btnDriver
             // 
@@ -64,12 +68,14 @@
             btnDriver.FlatStyle = FlatStyle.Flat;
             btnDriver.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             btnDriver.ForeColor = Color.White;
-            btnDriver.Location = new Point(348, 226);
+            btnDriver.Location = new Point(398, 301);
+            btnDriver.Margin = new Padding(3, 4, 3, 4);
             btnDriver.Name = "btnDriver";
-            btnDriver.Size = new Size(280, 80);
+            btnDriver.Size = new Size(320, 107);
             btnDriver.TabIndex = 2;
             btnDriver.Text = "Οδηγός";
             btnDriver.UseVisualStyleBackColor = false;
+            btnDriver.Click += btnDriver_Click;
             // 
             // btnEmployee
             // 
@@ -77,12 +83,14 @@
             btnEmployee.FlatStyle = FlatStyle.Flat;
             btnEmployee.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             btnEmployee.ForeColor = Color.White;
-            btnEmployee.Location = new Point(348, 338);
+            btnEmployee.Location = new Point(398, 451);
+            btnEmployee.Margin = new Padding(3, 4, 3, 4);
             btnEmployee.Name = "btnEmployee";
-            btnEmployee.Size = new Size(280, 80);
+            btnEmployee.Size = new Size(320, 107);
             btnEmployee.TabIndex = 3;
             btnEmployee.Text = "Υπάλληλος / Προσωπικό";
             btnEmployee.UseVisualStyleBackColor = false;
+            btnEmployee.Click += btnEmployee_Click_1;
             // 
             // btnBack
             // 
@@ -98,25 +106,14 @@
             btnBack.UseVisualStyleBackColor = true;
             btnBack.Click += btnBack_Click;
             // 
-            // btnStaffLogin
-            // 
-            btnStaffLogin.BackColor = SystemColors.Control;
-            btnStaffLogin.Font = new Font("Segoe UI", 10F);
-            btnStaffLogin.ForeColor = Color.Black;
-            btnStaffLogin.Location = new Point(782, 521);
-            btnStaffLogin.Name = "btnStaffLogin";
-            btnStaffLogin.Size = new Size(190, 45);
-            btnStaffLogin.TabIndex = 5;
-            btnStaffLogin.Text = "Είσοδος Προσωπικού";
-            btnStaffLogin.UseVisualStyleBackColor = true;
-            btnStaffLogin.Click += btnStaffLogin_Click;
-            // 
             // RoleSelection
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(984, 611);
+            ClientSize = new Size(1125, 815);
             Controls.Add(btnBack);
+            Controls.Add(btnEmployee);
+            Controls.Add(btnDriver);
             Controls.Add(btnPassenger);
             Controls.Add(label1);
             Margin = new Padding(3, 4, 3, 4);
@@ -131,7 +128,8 @@
 
         private Label label1;
         private Button btnPassenger;
+        private Button btnDriver;
+        private Button btnEmployee;
         private Button btnBack;
-        private Button btnStaffLogin;
     }
 }

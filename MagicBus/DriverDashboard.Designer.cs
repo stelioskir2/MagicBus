@@ -31,7 +31,7 @@
             btnClimate.FlatStyle = FlatStyle.Flat;
             btnClimate.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnClimate.ForeColor = Color.White;
-            btnClimate.Location = new Point(347, 203);
+            btnClimate.Location = new Point(352, 150);
             btnClimate.Name = "btnClimate";
             btnClimate.Size = new Size(280, 70);
             btnClimate.TabIndex = 0;
@@ -45,7 +45,7 @@
             btnWeatherRoof.FlatStyle = FlatStyle.Flat;
             btnWeatherRoof.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnWeatherRoof.ForeColor = Color.White;
-            btnWeatherRoof.Location = new Point(347, 304);
+            btnWeatherRoof.Location = new Point(352, 240);
             btnWeatherRoof.Name = "btnWeatherRoof";
             btnWeatherRoof.Size = new Size(280, 70);
             btnWeatherRoof.TabIndex = 1;
@@ -59,7 +59,7 @@
             btnSafety.FlatStyle = FlatStyle.Flat;
             btnSafety.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnSafety.ForeColor = Color.White;
-            btnSafety.Location = new Point(347, 405);
+            btnSafety.Location = new Point(352, 330);
             btnSafety.Name = "btnSafety";
             btnSafety.Size = new Size(280, 70);
             btnSafety.TabIndex = 4;
@@ -73,7 +73,7 @@
             btnDoors.FlatStyle = FlatStyle.Flat;
             btnDoors.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnDoors.ForeColor = Color.White;
-            btnDoors.Location = new Point(347, 506);
+            btnDoors.Location = new Point(352, 420);
             btnDoors.Name = "btnDoors";
             btnDoors.Size = new Size(280, 70);
             btnDoors.TabIndex = 5;
@@ -86,7 +86,7 @@
             btnBack.BackColor = SystemColors.Control;
             btnBack.Font = new Font("Segoe UI", 10F);
             btnBack.ForeColor = Color.Black;
-            btnBack.Location = new Point(12, 521);
+            btnBack.Location = new Point(12, 545);
             btnBack.Name = "btnBack";
             btnBack.Size = new Size(190, 49);
             btnBack.TabIndex = 2;
@@ -99,7 +99,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold);
             label1.ForeColor = Color.MidnightBlue;
-            label1.Location = new Point(314, 135);
+            label1.Location = new Point(319, 80);
             label1.Name = "label1";
             label1.Size = new Size(346, 37);
             label1.TabIndex = 3;

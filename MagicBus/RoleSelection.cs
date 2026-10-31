@@ -62,5 +62,11 @@ namespace MagicBus
             using PassengerHome passengerForm = new PassengerHome();
             passengerForm.ShowDialog(this);
         }
+
+        private void btnEmployee_Click_1(object sender, EventArgs e)
+        {
+            using EmployeeDashboard employeeForm = new EmployeeDashboard();
+            employeeForm.ShowDialog(this);
+        }
     }
 }

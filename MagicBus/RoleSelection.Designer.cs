@@ -89,6 +89,7 @@
             btnEmployee.TabIndex = 3;
             btnEmployee.Text = "Υπάλληλος / Προσωπικό";
             btnEmployee.UseVisualStyleBackColor = false;
+            btnEmployee.Click += btnEmployee_Click_1;
             // 
             // btnBack
             // 

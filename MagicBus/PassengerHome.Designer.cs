@@ -35,6 +35,7 @@
             btnTour = new Button();
             btnAttractions = new Button();
             btnLost = new Button();
+            lblLostNotification = new Label();
             SuspendLayout();
             // 
             // lblTitle
@@ -88,6 +89,7 @@
             btnShelter.TabIndex = 3;
             btnShelter.Text = "Ασφαλή καταφύγια";
             btnShelter.UseVisualStyleBackColor = false;
+            btnShelter.Click += btnShelter_Click;
             // 
             // btnTour
             // 
@@ -101,6 +103,7 @@
             btnTour.TabIndex = 4;
             btnTour.Text = "Τουριστική πλοήγηση";
             btnTour.UseVisualStyleBackColor = false;
+            btnTour.Click += btnTour_Click;
             // 
             // btnAttractions
             // 
@@ -128,6 +131,19 @@
             btnLost.TabIndex = 6;
             btnLost.Text = "Απολεσθέντα";
             btnLost.UseVisualStyleBackColor = false;
+            btnLost.Click += btnLost_Click;
+            // 
+            // lblLostNotification
+            // 
+            lblLostNotification.AutoSize = true;
+            lblLostNotification.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 161);
+            lblLostNotification.ForeColor = Color.MidnightBlue;
+            lblLostNotification.Location = new Point(684, 363);
+            lblLostNotification.Name = "lblLostNotification";
+            lblLostNotification.Size = new Size(249, 28);
+            lblLostNotification.TabIndex = 7;
+            lblLostNotification.Text = "Υπάρχουν νέα ευρήματα";
+            lblLostNotification.Visible = false;
             // 
             // PassengerHome
             // 
@@ -135,6 +151,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(982, 603);
+            Controls.Add(lblLostNotification);
             Controls.Add(btnLost);
             Controls.Add(btnAttractions);
             Controls.Add(btnTour);
@@ -159,5 +176,6 @@
         private Button btnTour;
         private Button btnAttractions;
         private Button btnLost;
+        private Label lblLostNotification;
     }
 }

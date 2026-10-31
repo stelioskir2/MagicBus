@@ -13,6 +13,8 @@ namespace MagicBus
         public PassengerHome()
         {
             InitializeComponent();
+            lblLostNotification.Visible = LostItemsData.Items.Exists(
+                item => item.FoundAt.Date == DateTime.Today);
         }
 
         private void PassengerHome_Load(object sender, EventArgs e)
@@ -36,6 +38,24 @@ namespace MagicBus
         {
             using RouteView route = new RouteView();
             route.ShowDialog(this);
+        }
+
+        private void btnTour_Click(object sender, EventArgs e)
+        {
+            using TourNavigation tour = new TourNavigation();
+            tour.ShowDialog(this);
+        }
+
+        private void btnShelter_Click(object sender, EventArgs e)
+        {
+            using ShelterNavigation shelter = new ShelterNavigation();
+            shelter.ShowDialog(this);
+        }
+
+        private void btnLost_Click(object sender, EventArgs e)
+        {
+            using LostItems lostItems = new LostItems();
+            lostItems.ShowDialog(this);
         }
     }
 }

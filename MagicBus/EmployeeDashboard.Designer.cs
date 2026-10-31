@@ -23,6 +23,7 @@
             btnBack = new Button();
             label1 = new Label();
             btnRobot = new Button();
+            btnCafeOrders = new Button();
             SuspendLayout();
             // 
             // btnPassengers
@@ -109,11 +110,27 @@
             btnRobot.UseVisualStyleBackColor = false;
             btnRobot.Click += btnRobot_Click;
             // 
+            // btnCafeOrders
+            // 
+            btnCafeOrders.BackColor = Color.MidnightBlue;
+            btnCafeOrders.FlatStyle = FlatStyle.Flat;
+            btnCafeOrders.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            btnCafeOrders.ForeColor = Color.White;
+            btnCafeOrders.Location = new Point(762, 177);
+            btnCafeOrders.Margin = new Padding(3, 4, 3, 4);
+            btnCafeOrders.Name = "btnCafeOrders";
+            btnCafeOrders.Size = new Size(320, 107);
+            btnCafeOrders.TabIndex = 6;
+            btnCafeOrders.Text = "Παραγγελίες Καφετέριας";
+            btnCafeOrders.UseVisualStyleBackColor = false;
+            btnCafeOrders.Click += btnCafeOrders_Click;
+            // 
             // EmployeeDashboard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1125, 815);
+            Controls.Add(btnCafeOrders);
             Controls.Add(btnRobot);
             Controls.Add(label1);
             Controls.Add(btnBack);
@@ -135,5 +152,6 @@
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label label1;
         private Button btnRobot;
+        private Button btnCafeOrders;
     }
 }

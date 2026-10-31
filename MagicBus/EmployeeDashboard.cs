@@ -54,5 +54,11 @@ namespace MagicBus
             using RobotCleaner robot = new RobotCleaner();
             robot.ShowDialog(this);
         }
+
+        private void btnCafeOrders_Click(object sender, EventArgs e)
+        {
+            using CafeOrders cafeOrders = new CafeOrders();
+            cafeOrders.ShowDialog(this);
+        }
     }
 }

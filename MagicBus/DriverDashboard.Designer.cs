@@ -21,6 +21,8 @@
             btnWeatherRoof = new Button();
             btnBack = new Button();
             label1 = new Label();
+            btnSafety = new Button();
+            btnDoors = new Button();
             SuspendLayout();
             // 
             // btnClimate
@@ -51,6 +53,34 @@
             btnWeatherRoof.UseVisualStyleBackColor = false;
             btnWeatherRoof.Click += btnWeatherRoof_Click;
             // 
+            // btnSafety
+            // 
+            btnSafety.BackColor = Color.MidnightBlue;
+            btnSafety.FlatStyle = FlatStyle.Flat;
+            btnSafety.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            btnSafety.ForeColor = Color.White;
+            btnSafety.Location = new Point(347, 405);
+            btnSafety.Name = "btnSafety";
+            btnSafety.Size = new Size(280, 70);
+            btnSafety.TabIndex = 4;
+            btnSafety.Text = "Ειδοποιήσεις Οδήγησης";
+            btnSafety.UseVisualStyleBackColor = false;
+            btnSafety.Click += btnSafety_Click;
+            // 
+            // btnDoors
+            // 
+            btnDoors.BackColor = Color.MidnightBlue;
+            btnDoors.FlatStyle = FlatStyle.Flat;
+            btnDoors.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            btnDoors.ForeColor = Color.White;
+            btnDoors.Location = new Point(347, 506);
+            btnDoors.Name = "btnDoors";
+            btnDoors.Size = new Size(280, 70);
+            btnDoors.TabIndex = 5;
+            btnDoors.Text = "Αποβίβαση / Πόρτες";
+            btnDoors.UseVisualStyleBackColor = false;
+            btnDoors.Click += btnDoors_Click;
+            // 
             // btnBack
             // 
             btnBack.BackColor = SystemColors.Control;
@@ -80,6 +110,8 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(984, 611);
+            Controls.Add(btnDoors);
+            Controls.Add(btnSafety);
             Controls.Add(label1);
             Controls.Add(btnBack);
             Controls.Add(btnWeatherRoof);
@@ -97,5 +129,7 @@
         private System.Windows.Forms.Button btnWeatherRoof;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label label1;
+        private Button btnSafety;
+        private Button btnDoors;
     }
 }

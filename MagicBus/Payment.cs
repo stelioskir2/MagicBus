@@ -113,13 +113,14 @@ namespace MagicBus
                 return;
             }
 
-            CafeOrder.OrderNumber = Random.Shared.Next(1000, 10000);
+            CafeOrder.PlaceOrder();
 
             MessageBox.Show(
                 $"Η πληρωμή των {CafeOrder.Total:0.00} € ολοκληρώθηκε επιτυχώς!\n\n"
                 + $"Αριθμός παραγγελίας: #{CafeOrder.OrderNumber}\n\n"
                 + $"Η καφετέρια «{CafeOrder.Cafe}» ετοιμάζει την παραγγελία σας "
-                + "και θα σας ενημερώσει σε ποια στάση θα σας παραδοθεί.",
+                + "και θα σας ενημερώσει σε ποια στάση θα σας παραδοθεί.\n\n"
+                + "Μπορείτε να την παρακολουθείτε από το «Η παραγγελία μου».",
                 "Επιτυχής πληρωμή",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);

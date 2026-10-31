@@ -19,37 +19,23 @@ namespace MagicBus
 
         private void btnPassenger_Click(object sender, EventArgs e)
         {
-            // Ανοίγει την οθόνη του επιβάτη (του Ατόμου 1)
-            PassengerHome passengerForm = new PassengerHome();
-            passengerForm.Show();
-            this.Hide();
+            // Προσωρινό μήνυμα μέχρι να ανέβει η φόρμα του επιβάτη από την ομάδα
+            MessageBox.Show("Η ενότητα του Επιβάτη αναπτύσσεται από άλλο μέλος της ομάδας.", "Υπό Κατασκευή", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void btnDriver_Click(object sender, EventArgs e)
+        private void btnStaffLogin_Click(object sender, EventArgs e)
         {
-            // Ανοίγει τον πίνακα ελέγχου του οδηγού (Άτομο 3)
-            DriverDashboard driverForm = new DriverDashboard();
-            driverForm.Show();
+            // Ανοίγει τη φόρμα πιστοποίησης προσωπικού (Οδηγός / Υπάλληλος)
+            StaffLogin staffLoginForm = new StaffLogin();
+            staffLoginForm.Show();
             this.Hide();
-        }
-
-        private void btnEmployee_Click(object sender, EventArgs e)
-        {
-            // Ανοίγει τον πίνακα ελέγχου του υπαλλήλου (Άτομο 3)
-            EmployeeDashboard employeeForm = new EmployeeDashboard();
-            employeeForm.Show();
-            this.Hide();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void RoleSelection_Load(object sender, EventArgs e)
         {
 
         }
+
         private void btnBack_Click(object sender, EventArgs e)
         {
             Welcome welcomeForm = new Welcome();

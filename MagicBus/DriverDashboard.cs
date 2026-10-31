@@ -23,12 +23,18 @@ namespace MagicBus
 
         private void btnClimate_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Η οθόνη κλιματισμού είναι υπό κατασκευή.", "MagicBus", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            // Ανοίγει τη φόρμα ελέγχου κλιματισμού
+            ClimateControl climateForm = new ClimateControl();
+            climateForm.Show();
+            this.Hide(); // Κρύβει προσωρινά το dashboard του οδηγού
         }
 
         private void btnWeatherRoof_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Η οθόνη καιρού & οροφής είναι υπό κατασκευή.", "MagicBus", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            // Ανοίγει τη νέα φόρμα Καιρού & Οροφής
+            WeatherAndRoof weatherForm = new WeatherAndRoof();
+            weatherForm.Show();
+            this.Hide(); // Κρύβει προσωρινά το dashboard του οδηγού
         }
 
         private void btnBack_Click(object sender, EventArgs e)

@@ -23,17 +23,23 @@ namespace MagicBus
 
         private void btnPassengers_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Η διαχείριση επιβατών είναι υπό κατασκευή.", "MagicBus", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            PassengerManagement passengerForm = new PassengerManagement();
+            passengerForm.Show();
+            this.Hide();
         }
 
         private void btnBusStatus_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Η κατάσταση λεωφορείου είναι υπό κατασκευή.", "MagicBus", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            BusStatus statusForm = new BusStatus();
+            statusForm.Show();
+            this.Hide();
         }
 
         private void btnSchedule_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Ο προγραμματισμός και οι στάσεις είναι υπό κατασκευή.", "MagicBus", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ScheduleAndStops scheduleForm = new ScheduleAndStops();
+            scheduleForm.Show();
+            this.Hide();
         }
 
         private void btnBack_Click(object sender, EventArgs e)

@@ -102,23 +102,23 @@
             //
             // lblStop
             //
-            lblStop.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 161);
+            lblStop.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 161);
             lblStop.ForeColor = Color.MidnightBlue;
             lblStop.Location = new Point(420, 235);
             lblStop.Name = "lblStop";
-            lblStop.Size = new Size(530, 65);
+            lblStop.Size = new Size(530, 80);
             lblStop.TabIndex = 6;
             //
             // txtDetails
             //
             txtDetails.BackColor = Color.White;
             txtDetails.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 161);
-            txtDetails.Location = new Point(420, 310);
+            txtDetails.Location = new Point(420, 325);
             txtDetails.Multiline = true;
             txtDetails.Name = "txtDetails";
             txtDetails.ReadOnly = true;
             txtDetails.ScrollBars = ScrollBars.Vertical;
-            txtDetails.Size = new Size(530, 190);
+            txtDetails.Size = new Size(530, 175);
             txtDetails.TabIndex = 7;
             txtDetails.TabStop = false;
             //

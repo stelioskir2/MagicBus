@@ -22,7 +22,7 @@ namespace MagicBus
             else
             {
                 lblStatus.Text = "Δεν έχετε κάνει ακόμα παραγγελία.";
-                lblStop.Text = "Μπορείτε να παραγγείλετε από το «Παραγγελία από καφετέρια».";
+                lblStop.Text = "Παραγγείλετε από το «Παραγγελία από καφετέρια».";
             }
 
             timerRefresh.Start();
@@ -56,15 +56,15 @@ namespace MagicBus
 
             if (order.Status == PlacedOrder.StatusDelivered)
             {
-                lblStop.Text = $"Η παραγγελία παραδόθηκε στη στάση «{order.DeliveryStop}». Καλή απόλαυση!";
+                lblStop.Text = $"Παραδόθηκε στη στάση «{order.DeliveryStop}». Καλή απόλαυση!";
             }
             else if (order.DeliveryStop != null)
             {
-                lblStop.Text = $"Θα παραλάβετε την παραγγελία σας στη στάση «{order.DeliveryStop}».";
+                lblStop.Text = $"Παραλαβή στη στάση «{order.DeliveryStop}».";
             }
             else
             {
-                lblStop.Text = "Η καφετέρια θα σας ενημερώσει σε ποια στάση θα γίνει η παράδοση.";
+                lblStop.Text = "Η καφετέρια θα σας ενημερώσει σύντομα για τη στάση παράδοσης.";
             }
         }
 

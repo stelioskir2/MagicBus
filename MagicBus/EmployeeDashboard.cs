@@ -48,5 +48,11 @@ namespace MagicBus
             roleForm.Show();
             this.Close();
         }
+
+        private void btnRobot_Click(object sender, EventArgs e)
+        {
+            using RobotCleaner robot = new RobotCleaner();
+            robot.ShowDialog(this);
+        }
     }
 }

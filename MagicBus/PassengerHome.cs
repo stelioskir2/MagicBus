@@ -63,5 +63,11 @@ namespace MagicBus
             using CafeSelection cafe = new CafeSelection();
             cafe.ShowDialog(this);
         }
+
+        private void btnOrderTracking_Click(object sender, EventArgs e)
+        {
+            using OrderTracking tracking = new OrderTracking();
+            tracking.ShowDialog(this);
+        }
     }
 }

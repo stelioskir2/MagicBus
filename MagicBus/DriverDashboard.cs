@@ -51,6 +51,18 @@ namespace MagicBus
             this.Hide(); // Κρύβει προσωρινά το dashboard του οδηγού
         }
 
+        private void btnSafety_Click(object sender, EventArgs e)
+        {
+            using DriverSafety safety = new DriverSafety();
+            safety.ShowDialog(this);
+        }
+
+        private void btnDoors_Click(object sender, EventArgs e)
+        {
+            using Doors doors = new Doors();
+            doors.ShowDialog(this);
+        }
+
         private void btnBack_Click(object sender, EventArgs e)
         {
             RoleSelection roleForm = new RoleSelection();

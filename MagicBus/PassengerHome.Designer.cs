@@ -37,6 +37,7 @@
             btnLost = new Button();
             lblLostNotification = new Label();
             btnCafe = new Button();
+            btnOrderTracking = new Button();
             SuspendLayout();
             // 
             // lblTitle
@@ -160,12 +161,27 @@
             btnCafe.UseVisualStyleBackColor = false;
             btnCafe.Click += btnCafe_Click;
             // 
+            // btnOrderTracking
+            // 
+            btnOrderTracking.BackColor = Color.MidnightBlue;
+            btnOrderTracking.FlatStyle = FlatStyle.Flat;
+            btnOrderTracking.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 161);
+            btnOrderTracking.ForeColor = Color.White;
+            btnOrderTracking.Location = new Point(30, 390);
+            btnOrderTracking.Name = "btnOrderTracking";
+            btnOrderTracking.Size = new Size(280, 100);
+            btnOrderTracking.TabIndex = 9;
+            btnOrderTracking.Text = "Η παραγγελία μου";
+            btnOrderTracking.UseVisualStyleBackColor = false;
+            btnOrderTracking.Click += btnOrderTracking_Click;
+            // 
             // PassengerHome
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(982, 603);
+            Controls.Add(btnOrderTracking);
             Controls.Add(btnCafe);
             Controls.Add(lblLostNotification);
             Controls.Add(btnLost);
@@ -194,5 +210,6 @@
         private Button btnLost;
         private Label lblLostNotification;
         private Button btnCafe;
+        private Button btnOrderTracking;
     }
 }

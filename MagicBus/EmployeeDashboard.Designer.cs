@@ -32,7 +32,7 @@
             btnPassengers.FlatStyle = FlatStyle.Flat;
             btnPassengers.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             btnPassengers.ForeColor = Color.White;
-            btnPassengers.Location = new Point(402, 177);
+            btnPassengers.Location = new Point(222, 215);
             btnPassengers.Margin = new Padding(3, 4, 3, 4);
             btnPassengers.Name = "btnPassengers";
             btnPassengers.Size = new Size(320, 107);
@@ -47,7 +47,7 @@
             btnBusStatus.FlatStyle = FlatStyle.Flat;
             btnBusStatus.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             btnBusStatus.ForeColor = Color.White;
-            btnBusStatus.Location = new Point(402, 320);
+            btnBusStatus.Location = new Point(582, 215);
             btnBusStatus.Margin = new Padding(3, 4, 3, 4);
             btnBusStatus.Name = "btnBusStatus";
             btnBusStatus.Size = new Size(320, 107);
@@ -62,7 +62,7 @@
             btnSchedule.FlatStyle = FlatStyle.Flat;
             btnSchedule.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             btnSchedule.ForeColor = Color.White;
-            btnSchedule.Location = new Point(402, 463);
+            btnSchedule.Location = new Point(222, 360);
             btnSchedule.Margin = new Padding(3, 4, 3, 4);
             btnSchedule.Name = "btnSchedule";
             btnSchedule.Size = new Size(320, 107);
@@ -90,7 +90,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold);
             label1.ForeColor = Color.MidnightBlue;
-            label1.Location = new Point(326, 92);
+            label1.Location = new Point(304, 110);
             label1.Name = "label1";
             label1.Size = new Size(516, 46);
             label1.TabIndex = 4;
@@ -102,7 +102,7 @@
             btnRobot.FlatStyle = FlatStyle.Flat;
             btnRobot.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 161);
             btnRobot.ForeColor = Color.White;
-            btnRobot.Location = new Point(402, 600);
+            btnRobot.Location = new Point(582, 360);
             btnRobot.Name = "btnRobot";
             btnRobot.Size = new Size(320, 107);
             btnRobot.TabIndex = 5;
@@ -116,7 +116,7 @@
             btnCafeOrders.FlatStyle = FlatStyle.Flat;
             btnCafeOrders.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             btnCafeOrders.ForeColor = Color.White;
-            btnCafeOrders.Location = new Point(762, 177);
+            btnCafeOrders.Location = new Point(402, 505);
             btnCafeOrders.Margin = new Padding(3, 4, 3, 4);
             btnCafeOrders.Name = "btnCafeOrders";
             btnCafeOrders.Size = new Size(320, 107);

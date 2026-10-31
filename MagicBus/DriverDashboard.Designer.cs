@@ -21,6 +21,7 @@
             btnWeatherRoof = new Button();
             btnBack = new Button();
             label1 = new Label();
+            lblFoundItems = new Label();
             SuspendLayout();
             // 
             // btnClimate
@@ -29,9 +30,10 @@
             btnClimate.FlatStyle = FlatStyle.Flat;
             btnClimate.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnClimate.ForeColor = Color.White;
-            btnClimate.Location = new Point(347, 203);
+            btnClimate.Location = new Point(397, 271);
+            btnClimate.Margin = new Padding(3, 4, 3, 4);
             btnClimate.Name = "btnClimate";
-            btnClimate.Size = new Size(280, 70);
+            btnClimate.Size = new Size(320, 93);
             btnClimate.TabIndex = 0;
             btnClimate.Text = "Έλεγχος Κλιματισμού";
             btnClimate.UseVisualStyleBackColor = false;
@@ -43,9 +45,10 @@
             btnWeatherRoof.FlatStyle = FlatStyle.Flat;
             btnWeatherRoof.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnWeatherRoof.ForeColor = Color.White;
-            btnWeatherRoof.Location = new Point(347, 304);
+            btnWeatherRoof.Location = new Point(397, 405);
+            btnWeatherRoof.Margin = new Padding(3, 4, 3, 4);
             btnWeatherRoof.Name = "btnWeatherRoof";
-            btnWeatherRoof.Size = new Size(280, 70);
+            btnWeatherRoof.Size = new Size(320, 93);
             btnWeatherRoof.TabIndex = 1;
             btnWeatherRoof.Text = "Καιρός && Οροφή";
             btnWeatherRoof.UseVisualStyleBackColor = false;
@@ -56,9 +59,10 @@
             btnBack.BackColor = SystemColors.Control;
             btnBack.Font = new Font("Segoe UI", 10F);
             btnBack.ForeColor = Color.Black;
-            btnBack.Location = new Point(12, 521);
+            btnBack.Location = new Point(14, 695);
+            btnBack.Margin = new Padding(3, 4, 3, 4);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(190, 49);
+            btnBack.Size = new Size(217, 65);
             btnBack.TabIndex = 2;
             btnBack.Text = "Επιστροφή στον έλεγχο προσωπικού";
             btnBack.UseVisualStyleBackColor = true;
@@ -69,21 +73,34 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold);
             label1.ForeColor = Color.MidnightBlue;
-            label1.Location = new Point(314, 135);
+            label1.Location = new Point(359, 180);
             label1.Name = "label1";
-            label1.Size = new Size(346, 37);
+            label1.Size = new Size(433, 46);
             label1.TabIndex = 3;
             label1.Text = "Πίνακας Ελέγχου Οδηγού";
             // 
+            // lblFoundItems
+            // 
+            lblFoundItems.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 161);
+            lblFoundItems.ForeColor = Color.MidnightBlue;
+            lblFoundItems.Location = new Point(395, 520);
+            lblFoundItems.Name = "lblFoundItems";
+            lblFoundItems.Size = new Size(400, 100);
+            lblFoundItems.TabIndex = 4;
+            lblFoundItems.Text = "Σημερινά ευρήματα: 0";
+            lblFoundItems.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // DriverDashboard
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(984, 611);
+            ClientSize = new Size(1125, 815);
+            Controls.Add(lblFoundItems);
             Controls.Add(label1);
             Controls.Add(btnBack);
             Controls.Add(btnWeatherRoof);
             Controls.Add(btnClimate);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "DriverDashboard";
             Text = "MagicBus - Πίνακας Ελέγχου Οδηγού";
             Load += DriverDashboard_Load_1;
@@ -97,5 +114,6 @@
         private System.Windows.Forms.Button btnWeatherRoof;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label label1;
+        private Label lblFoundItems;
     }
 }

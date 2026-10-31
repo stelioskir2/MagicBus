@@ -23,6 +23,7 @@
             btnBack = new Button();
             label1 = new Label();
             btnRobot = new Button();
+            lblFoundItems = new Label();
             SuspendLayout();
             // 
             // btnPassengers
@@ -109,11 +110,22 @@
             btnRobot.UseVisualStyleBackColor = false;
             btnRobot.Click += btnRobot_Click;
             // 
+            // lblFoundItems
+            // 
+            lblFoundItems.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 161);
+            lblFoundItems.ForeColor = Color.MidnightBlue;
+            lblFoundItems.Location = new Point(760, 600);
+            lblFoundItems.Name = "lblFoundItems";
+            lblFoundItems.Size = new Size(330, 100);
+            lblFoundItems.TabIndex = 6;
+            lblFoundItems.Text = "\tΣημερινά ευρήματα: 0";
+            // 
             // EmployeeDashboard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1125, 815);
+            Controls.Add(lblFoundItems);
             Controls.Add(btnRobot);
             Controls.Add(label1);
             Controls.Add(btnBack);
@@ -135,5 +147,6 @@
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label label1;
         private Button btnRobot;
+        private Label lblFoundItems;
     }
 }

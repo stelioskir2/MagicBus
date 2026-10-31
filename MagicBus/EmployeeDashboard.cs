@@ -15,6 +15,16 @@ namespace MagicBus
         public EmployeeDashboard()
         {
             InitializeComponent();
+            Activated += (_, _) =>
+            {
+                int count = LostItemsData.Items.Count(
+                    item => item.FoundAt.Date == DateTime.Today);
+
+                lblFoundItems.Text = count == 0
+                    ? "Δεν υπάρχουν σημερινά ευρήματα."
+                    : $"Σημερινά ευρήματα: {count}\n"
+                    + "Από το ρομπότ καθαρισμού.";
+            };
         }
 
         private void EmployeeDashboard_Load(object sender, EventArgs e)

@@ -15,6 +15,20 @@ namespace MagicBus
         public DriverDashboard()
         {
             InitializeComponent();
+
+            lblFoundItems.Left = btnClimate.Left
+                + (btnClimate.Width - lblFoundItems.Width) / 2;
+
+            Activated += (_, _) =>
+            {
+                int count = LostItemsData.Items.Count(
+                    item => item.FoundAt.Date == DateTime.Today);
+
+                lblFoundItems.Text = count == 0
+                    ? "Δεν υπάρχουν σημερινά ευρήματα."
+                    : $"Σημερινά ευρήματα: {count}\n"
+                      + "Από το ρομπότ καθαρισμού.";
+            };
         }
 
         private void DriverDashboard_Load(object sender, EventArgs e)
@@ -46,7 +60,6 @@ namespace MagicBus
 
         private void DriverDashboard_Load_1(object sender, EventArgs e)
         {
-
         }
     }
 }

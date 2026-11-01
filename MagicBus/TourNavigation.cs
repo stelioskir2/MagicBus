@@ -116,5 +116,19 @@ namespace MagicBus
                 MessageBox.Show("Δεν ήταν δυνατό να ανοίξει ο χάρτης: " + ex.Message);
             }
         }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+                "Οδηγίες — Τουριστική Πλοήγηση:\n\n" +
+                "1. Επιλέξτε κατηγορία προορισμού από την αναπτυσσόμενη λίστα.\n" +
+                "2. Επιλέξτε τον επιθυμητό προορισμό από τη λίστα.\n" +
+                "3. Επιλέξτε στάση εκκίνησης.\n" +
+                "4. Πατήστε 'Έναρξη πλοήγησης' για να ανοίξει ο χάρτης.",
+                "On-line Help — Πλοήγηση",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+            );
+        }
     }
 }

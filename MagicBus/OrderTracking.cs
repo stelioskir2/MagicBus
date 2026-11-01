@@ -83,5 +83,18 @@ namespace MagicBus
         {
             Close();
         }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+                "Οδηγίες — Η Παραγγελία Μου:\n\n" +
+                "1. Δείτε τις ενεργές και προηγούμενες παραγγελίες σας στη λίστα αριστερά.\n" +
+                "2. Επιλέξτε μια παραγγελία για να παρακολουθήσετε την πρόοδο και τη στάση παράδοσης σε πραγματικό χρόνο.\n" +
+                "3. Πατήστε 'Επιστροφή στο μενού' για να γυρίσετε πίσω.",
+                "On-line Help — Παρακολούθηση Παραγγελίας",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+            );
+        }
     }
 }

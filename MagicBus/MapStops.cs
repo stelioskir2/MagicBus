@@ -38,5 +38,18 @@ namespace MagicBus
                     + lstStops.SelectedItem.ToString();
             }
         }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+                "Οδηγίες — Χάρτης και Στάσεις:\n\n" +
+                "1. Επιλέξτε μια στάση από τη λίστα στα αριστερά.\n" +
+                "2. Δείτε τη θέση της στάσης στο σχηματικό διάγραμμα διαδρομής.\n" +
+                "3. Πατήστε 'Επιστροφή στο μενού' για να γυρίσετε στην αρχική οθόνη.",
+                "On-line Help — Στάσεις",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+            );
+        }
     }
 }

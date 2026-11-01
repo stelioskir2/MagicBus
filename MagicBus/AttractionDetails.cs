@@ -6,12 +6,14 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Speech.Synthesis;
+using System.Linq;
 
 namespace MagicBus
 {
     public partial class AttractionDetails : Form
     {
         private SpeechSynthesizer? speaker;
+
         public AttractionDetails()
         {
             InitializeComponent();
@@ -21,6 +23,7 @@ namespace MagicBus
                 speaker?.Dispose();
             };
         }
+
         public AttractionDetails(string attraction) : this()
         {
             lblTitle.Text = attraction;
@@ -54,6 +57,7 @@ namespace MagicBus
 
                 _ => "Δεν υπάρχει διαθέσιμη περιγραφή."
             };
+
             picAttraction.Image = attraction switch
             {
                 "Λευκός Πύργος" => Properties.Resources.whiteTower,
@@ -99,6 +103,19 @@ namespace MagicBus
         private void btnStop_Click(object sender, EventArgs e)
         {
             speaker?.SpeakAsyncCancelAll();
+        }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+                "Οδηγίες — Πληροφορίες Αξιοθέατου:\n\n" +
+                "1. Διαβάστε την περιγραφή και δείτε τη φωτογραφία του αξιοθέατου.\n" +
+                "2. Πατήστε 'Ακούστε την περιγραφή' για ηχητική ανάγνωση της κειμενικής περιγραφής.\n" +
+                "3. Πατήστε 'Διακοπή' για να σταματήσετε την ηχητική αναπαραγωγή.",
+                "On-line Help — Λεπτομέρειες Αξιοθέατου",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+            );
         }
     }
 }

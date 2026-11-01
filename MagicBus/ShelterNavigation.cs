@@ -109,5 +109,18 @@ namespace MagicBus
             showRoute = true;
             picRoute.Invalidate();
         }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+                "Οδηγίες — Προστασία από Κακοκαιρία:\n\n" +
+                "1. Επιλέξτε τη στάση στην οποία βρίσκεστε.\n" +
+                "2. Επιλέξτε έναν διαθέσιμο χώρο προστασίας από τη λίστα.\n" +
+                "3. Πατήστε 'Πλοήγηση στον χώρο' για να δείτε τη σχηματική διαδρομή πρόσβασης.",
+                "On-line Help — Καταφύγια",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+            );
+        }
     }
 }

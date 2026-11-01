@@ -42,5 +42,18 @@ namespace MagicBus
         {
             Close();
         }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+                "Οδηγίες — Αξιοθέατα:\n\n" +
+                "1. Επιλέξτε ένα αξιοθέατο από τη λίστα στα αριστερά.\n" +
+                "2. Πατήστε 'Πληροφορίες αξιοθέατου' για να δείτε λεπτομέρειες και να ακούσετε την περιγραφή του.\n" +
+                "3. Πατήστε 'Επιστροφή στο μενού' για να γυρίσετε στην αρχική οθόνη.",
+                "On-line Help — Αξιοθέατα",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+            );
+        }
     }
 }

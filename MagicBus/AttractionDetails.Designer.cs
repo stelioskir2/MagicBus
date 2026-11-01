@@ -34,6 +34,7 @@
             btnBack = new Button();
             btnPlay = new Button();
             btnStop = new Button();
+            btnHelp = new Button();
             ((System.ComponentModel.ISupportInitialize)picAttraction).BeginInit();
             SuspendLayout();
             // 
@@ -103,12 +104,27 @@
             btnStop.UseVisualStyleBackColor = true;
             btnStop.Click += btnStop_Click;
             // 
+            // btnHelp
+            // 
+            btnHelp.BackColor = Color.MidnightBlue;
+            btnHelp.FlatStyle = FlatStyle.Flat;
+            btnHelp.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 161);
+            btnHelp.ForeColor = Color.White;
+            btnHelp.Location = new Point(890, 25);
+            btnHelp.Name = "btnHelp";
+            btnHelp.Size = new Size(50, 50);
+            btnHelp.TabIndex = 4;
+            btnHelp.Text = "?";
+            btnHelp.UseVisualStyleBackColor = false;
+            btnHelp.Click += btnHelp_Click;
+            // 
             // AttractionDetails
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(982, 603);
+            Controls.Add(btnHelp);
             Controls.Add(btnStop);
             Controls.Add(btnPlay);
             Controls.Add(btnBack);
@@ -131,5 +147,6 @@
         private Button btnBack;
         private Button btnPlay;
         private Button btnStop;
+        private Button btnHelp;
     }
 }

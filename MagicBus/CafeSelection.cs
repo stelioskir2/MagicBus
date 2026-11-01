@@ -67,5 +67,18 @@ namespace MagicBus
         {
             Close();
         }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+                "Οδηγίες — Συνεργαζόμενες Καφετέριες:\n\n" +
+                "1. Επιλέξτε μια καφετέρια από τη λίστα στα αριστερά για να δείτε πληροφορίες και σημεία παράδοσης.\n" +
+                "2. Πατήστε 'Δείτε τον κατάλογο' για να περιηγηθείτε στα προϊόντα και να κάνετε παραγγελία.\n" +
+                "3. Πατήστε 'Επιστροφή στο μενού' για να γυρίσετε πίσω.",
+                "On-line Help — Καφετέριες",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+            );
+        }
     }
 }

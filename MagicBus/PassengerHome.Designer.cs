@@ -38,6 +38,7 @@
             lblLostNotification = new Label();
             btnCafe = new Button();
             btnOrderTracking = new Button();
+            btnHelp = new Button();
             SuspendLayout();
             // 
             // lblTitle
@@ -175,12 +176,27 @@
             btnOrderTracking.UseVisualStyleBackColor = false;
             btnOrderTracking.Click += btnOrderTracking_Click;
             // 
+            // btnHelp
+            // 
+            btnHelp.BackColor = Color.MidnightBlue;
+            btnHelp.FlatStyle = FlatStyle.Flat;
+            btnHelp.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 161);
+            btnHelp.ForeColor = Color.White;
+            btnHelp.Location = new Point(900, 25);
+            btnHelp.Name = "btnHelp";
+            btnHelp.Size = new Size(50, 50);
+            btnHelp.TabIndex = 10;
+            btnHelp.Text = "?";
+            btnHelp.UseVisualStyleBackColor = false;
+            btnHelp.Click += btnHelp_Click;
+            // 
             // PassengerHome
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(982, 603);
+            Controls.Add(btnHelp);
             Controls.Add(btnOrderTracking);
             Controls.Add(btnCafe);
             Controls.Add(lblLostNotification);
@@ -211,5 +227,6 @@
         private Label lblLostNotification;
         private Button btnCafe;
         private Button btnOrderTracking;
+        private Button btnHelp;
     }
 }

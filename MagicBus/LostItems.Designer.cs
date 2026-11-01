@@ -33,6 +33,7 @@
             lstItems = new ListBox();
             txtDetails = new TextBox();
             btnBack = new Button();
+            btnHelp = new Button();
             SuspendLayout();
             // 
             // lblTitle
@@ -93,12 +94,27 @@
             btnBack.UseVisualStyleBackColor = true;
             btnBack.Click += btnBack_Click;
             // 
+            // btnHelp
+            // 
+            btnHelp.BackColor = Color.MidnightBlue;
+            btnHelp.FlatStyle = FlatStyle.Flat;
+            btnHelp.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 161);
+            btnHelp.ForeColor = Color.White;
+            btnHelp.Location = new Point(900, 25);
+            btnHelp.Name = "btnHelp";
+            btnHelp.Size = new Size(50, 50);
+            btnHelp.TabIndex = 5;
+            btnHelp.Text = "?";
+            btnHelp.UseVisualStyleBackColor = false;
+            btnHelp.Click += btnHelp_Click;
+            // 
             // LostItems
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(982, 603);
+            Controls.Add(btnHelp);
             Controls.Add(btnBack);
             Controls.Add(txtDetails);
             Controls.Add(lstItems);
@@ -118,5 +134,6 @@
         private ListBox lstItems;
         private TextBox txtDetails;
         private Button btnBack;
+        private Button btnHelp;
     }
 }

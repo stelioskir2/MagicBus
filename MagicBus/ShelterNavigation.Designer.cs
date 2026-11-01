@@ -37,6 +37,7 @@
             btnBack = new Button();
             lblSimulation = new Label();
             picRoute = new PictureBox();
+            btnHelp = new Button();
             ((System.ComponentModel.ISupportInitialize)picRoute).BeginInit();
             SuspendLayout();
             // 
@@ -133,12 +134,27 @@
             picRoute.TabIndex = 8;
             picRoute.TabStop = false;
             // 
+            // btnHelp
+            // 
+            btnHelp.BackColor = Color.MidnightBlue;
+            btnHelp.FlatStyle = FlatStyle.Flat;
+            btnHelp.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 161);
+            btnHelp.ForeColor = Color.White;
+            btnHelp.Location = new Point(900, 39);
+            btnHelp.Name = "btnHelp";
+            btnHelp.Size = new Size(50, 50);
+            btnHelp.TabIndex = 9;
+            btnHelp.Text = "?";
+            btnHelp.UseVisualStyleBackColor = false;
+            btnHelp.Click += btnHelp_Click;
+            // 
             // ShelterNavigation
             // 
             AutoScaleDimensions = new SizeF(13F, 31F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(982, 603);
+            Controls.Add(btnHelp);
             Controls.Add(picRoute);
             Controls.Add(lblSimulation);
             Controls.Add(btnBack);
@@ -169,5 +185,6 @@
         private Button btnBack;
         private Label lblSimulation;
         private PictureBox picRoute;
+        private Button btnHelp;
     }
 }

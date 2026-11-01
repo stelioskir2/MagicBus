@@ -69,5 +69,21 @@ namespace MagicBus
             using OrderTracking tracking = new OrderTracking();
             tracking.ShowDialog(this);
         }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+                "Οδηγίες Αρχικού Μενού Επιβάτη:\n\n" +
+                "• Χάρτης & στάσεις: Προβολή στάσεων της διαδρομής.\n" +
+                "• Θέα διαδρομής: Ζωντανή προβολή κάμερας λεωφορείου.\n" +
+                "• Αξιοθέατα & Τουριστική πλοήγηση: Πληροφορίες και καθοδήγηση GPS.\n" +
+                "• Παραγγελία από καφετέρια & Η παραγγελία μου: Παραγγελία ροφημάτων με παράδοση σε επόμενη στάση.\n" +
+                "• Απολεσθέντα: Ενημέρωση για αντικείμενα που βρέθηκαν στο λεωφορείο.\n" +
+                "• Ασφαλή καταφύγια: Οδηγίες σε περίπτωση κακοκαιρίας.",
+                "On-line Help — Μενού Επιβάτη",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+            );
+        }
     }
 }

@@ -58,5 +58,17 @@ namespace MagicBus
         {
 
         }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+                "Οδηγίες — Θέα Διαδρομής:\n\n" +
+                "Σε αυτή την οθόνη προβάλλεται ζωντανά η θέα της διαδρομής όπως τη βλέπει ο οδηγός από το μπροστινό μέρος του λεωφορείου.\n" +
+                "Πατήστε 'Επιστροφή στο μενού' για να γυρίσετε στην αρχική οθόνη.",
+                "On-line Help — Θέα Διαδρομής",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+            );
+        }
     }
 }

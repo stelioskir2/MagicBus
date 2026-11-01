@@ -13,8 +13,16 @@ namespace MagicBus
         public PassengerHome()
         {
             InitializeComponent();
+
             lblLostNotification.Visible = LostItemsData.Items.Exists(
                 item => item.FoundAt.Date == DateTime.Today);
+
+            Activated += (_, _) =>
+            {
+                btnShelter.Text = BusWeatherData.IsRaining
+                    ? "Βροχή\nΧώροι προστασίας"
+                    : "Ασφαλή καταφύγια";
+            };
         }
 
         private void PassengerHome_Load(object sender, EventArgs e)
@@ -75,7 +83,7 @@ namespace MagicBus
             MessageBox.Show(
                 "Οδηγίες Αρχικού Μενού Επιβάτη:\n\n" +
                 "• Χάρτης & στάσεις: Προβολή στάσεων της διαδρομής.\n" +
-                "• Θέα διαδρομής: Ζωντανή προβολή κάμερας λεωφορείου.\n" +
+                "• Θέα διαδρομής: Προβολή βίντεο προσομοίωσης της διαδρομής.\n" +
                 "• Αξιοθέατα & Τουριστική πλοήγηση: Πληροφορίες και καθοδήγηση GPS.\n" +
                 "• Παραγγελία από καφετέρια & Η παραγγελία μου: Παραγγελία ροφημάτων με παράδοση σε επόμενη στάση.\n" +
                 "• Απολεσθέντα: Ενημέρωση για αντικείμενα που βρέθηκαν στο λεωφορείο.\n" +
@@ -84,6 +92,16 @@ namespace MagicBus
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information
             );
+        }
+
+        private void lblTitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

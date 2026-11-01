@@ -14,6 +14,12 @@ namespace MagicBus
         public ShelterNavigation()
         {
             InitializeComponent();
+            Activated += (_, _) =>
+            {
+                lblTitle.Text = BusWeatherData.IsRaining
+                    ? "Βροχή — Επιλέξτε χώρο προστασίας"
+                    : "Προστασία από κακοκαιρία";
+            };
             picRoute.Paint += picRoute_Paint;
 
             lstShelters.SelectedIndexChanged += (_, _) =>

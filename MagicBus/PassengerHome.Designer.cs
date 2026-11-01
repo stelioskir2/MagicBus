@@ -39,6 +39,7 @@
             btnCafe = new Button();
             btnOrderTracking = new Button();
             btnHelp = new Button();
+            btnBack = new Button();
             SuspendLayout();
             // 
             // lblTitle
@@ -51,6 +52,7 @@
             lblTitle.Size = new Size(533, 50);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Καλώς ήρθατε στο MagicBus";
+            lblTitle.Click += lblTitle_Click;
             // 
             // btnMap
             // 
@@ -190,12 +192,25 @@
             btnHelp.UseVisualStyleBackColor = false;
             btnHelp.Click += btnHelp_Click;
             // 
+            // btnBack
+            // 
+            btnBack.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            btnBack.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 161);
+            btnBack.Location = new Point(30, 540);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(280, 50);
+            btnBack.TabIndex = 11;
+            btnBack.Text = "Επιστροφή στην επιλογή ρόλου";
+            btnBack.UseVisualStyleBackColor = true;
+            btnBack.Click += btnBack_Click;
+            // 
             // PassengerHome
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(982, 603);
+            Controls.Add(btnBack);
             Controls.Add(btnHelp);
             Controls.Add(btnOrderTracking);
             Controls.Add(btnCafe);
@@ -228,5 +243,6 @@
         private Button btnCafe;
         private Button btnOrderTracking;
         private Button btnHelp;
+        private Button btnBack;
     }
 }

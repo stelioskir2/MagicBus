@@ -50,7 +50,7 @@
             lblTitle.Location = new Point(49, 39);
             lblTitle.Margin = new Padding(5, 0, 5, 0);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(379, 37);
+            lblTitle.Size = new Size(473, 46);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Προστασία από κακοκαιρία";
             // 
@@ -61,7 +61,7 @@
             lblStart.Location = new Point(30, 110);
             lblStart.Margin = new Padding(5, 0, 5, 0);
             lblStart.Name = "lblStart";
-            lblStart.Size = new Size(226, 25);
+            lblStart.Size = new Size(271, 31);
             lblStart.TabIndex = 1;
             lblStart.Text = "Σε ποια στάση βρίσκεστε;";
             // 
@@ -73,7 +73,7 @@
             cmbStart.Location = new Point(30, 150);
             cmbStart.Margin = new Padding(5);
             cmbStart.Name = "cmbStart";
-            cmbStart.Size = new Size(350, 33);
+            cmbStart.Size = new Size(350, 39);
             cmbStart.TabIndex = 2;
             cmbStart.SelectedIndexChanged += cmbStart_SelectedIndexChanged;
             // 
@@ -82,7 +82,7 @@
             lblShelters.AutoSize = true;
             lblShelters.Location = new Point(30, 220);
             lblShelters.Name = "lblShelters";
-            lblShelters.Size = new Size(268, 25);
+            lblShelters.Size = new Size(320, 31);
             lblShelters.TabIndex = 3;
             lblShelters.Text = "Διαθέσιμοι χώροι προστασίας";
             // 
@@ -91,7 +91,7 @@
             lstShelters.FormattingEnabled = true;
             lstShelters.Location = new Point(30, 260);
             lstShelters.Name = "lstShelters";
-            lstShelters.Size = new Size(400, 179);
+            lstShelters.Size = new Size(400, 159);
             lstShelters.TabIndex = 4;
             // 
             // btnNavigate
@@ -147,11 +147,12 @@
             // btnHelp
             // 
             btnHelp.BackColor = Color.MidnightBlue;
+            btnHelp.FlatStyle = FlatStyle.Flat;
             btnHelp.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 161);
             btnHelp.ForeColor = Color.White;
-            btnHelp.Location = new Point(788, 19);
+            btnHelp.Location = new Point(900, 25);
             btnHelp.Name = "btnHelp";
-            btnHelp.Size = new Size(50, 46);
+            btnHelp.Size = new Size(50, 50);
             btnHelp.TabIndex = 10;
             btnHelp.Text = "?";
             btnHelp.UseVisualStyleBackColor = false;
@@ -159,7 +160,7 @@
             // 
             // ShelterNavigation
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(13F, 31F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(982, 603);

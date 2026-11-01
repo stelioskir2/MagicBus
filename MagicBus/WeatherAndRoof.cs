@@ -15,46 +15,114 @@ namespace MagicBus
         public WeatherAndRoof()
         {
             InitializeComponent();
+
+            cmbWeather.Items.Clear();
+            cmbWeather.Items.AddRange(new object[]
+            {
+                "Ηλιοφάνεια",
+                "Συννεφιά",
+                "Βροχή"
+            });
+
+            cmbWeather.SelectedItem = BusWeatherData.Condition;
+
+            cmbWeather.SelectedIndexChanged +=
+                cmbWeather_SelectedIndexChanged;
         }
 
         private void WeatherAndRoof_Load(object sender, EventArgs e)
         {
-            GenerateRandomWeather();
+            UpdateWeatherDisplay();
         }
 
-        // Τυχαία παραγωγή στοιχείων καιρού για ποικιλία
-        private void GenerateRandomWeather()
+        private void UpdateWeatherDisplay()
         {
-            Random rand = new Random();
-            int temp = rand.Next(15, 34); // Θερμοκρασία από 15°C έως 33°C
+            lblWeatherInfo.Text =
+                $"Εξωτερική Θερμοκρασία: {BusWeatherData.Temperature}°C";
 
-            string[] conditions = { "Ηλιοφάνεια", "Μερική Συννεφιά", "Αίθριος", "Ελαφρύς Άνεμος" };
-            string condition = conditions[rand.Next(conditions.Length)];
+            lblFeelsLike.Text =
+                $"Αίσθηση Θερμοκρασίας: {BusWeatherData.Temperature + 2}°C";
 
-            lblWeatherInfo.Text = $"Εξωτερική Θερμοκρασία: {temp}°C ({condition})";
+            lblHumidity.Text = BusWeatherData.IsRaining
+                ? "Υγρασία: 85%"
+                : "Υγρασία: 45%";
+
+            lblVisibility.Text = BusWeatherData.IsRaining
+                ? "Ορατότητα: Μειωμένη"
+                : "Ορατότητα: Καλή";
+
             lblSunSet.Text = "Ώρα Δύσης Ηλίου: 20:30";
+
+            UpdateRoofDisplay();
         }
 
-        // Άνοιγμα οροφής
+        private void UpdateRoofDisplay()
+        {
+            lblRoofStatus.Text = BusWeatherData.RoofOpen
+                ? "Κατάσταση Οροφής: Ανοιχτή"
+                : "Κατάσταση Οροφής: Κλειστή";
+
+            lblRoofStatus.ForeColor = BusWeatherData.RoofOpen
+                ? Color.ForestGreen
+                : Color.Firebrick;
+        }
+
+        private void cmbWeather_SelectedIndexChanged(
+            object sender, EventArgs e)
+        {
+            if (cmbWeather.SelectedItem == null)
+            {
+                return;
+            }
+
+            BusWeatherData.Condition =
+                cmbWeather.SelectedItem.ToString()!;
+
+            if (BusWeatherData.IsRaining)
+            {
+                BusWeatherData.RoofOpen = false;
+            }
+            else if (BusWeatherData.Condition == "Ηλιοφάνεια")
+            {
+                BusWeatherData.RoofOpen = true;
+            }
+
+            UpdateWeatherDisplay();
+        }
+
         private void btnRoofOpen_Click(object sender, EventArgs e)
         {
-            lblRoofStatus.Text = "Κατάσταση Οροφής: Ανοιχτή";
-            lblRoofStatus.ForeColor = Color.ForestGreen;
+            if (BusWeatherData.IsRaining)
+            {
+                MessageBox.Show(
+                    this,
+                    "Βρέχει. Η οροφή πρέπει να παραμείνει κλειστή.",
+                    "Προστασία από βροχή",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+                return;
+            }
+
+            BusWeatherData.RoofOpen = true;
+            UpdateRoofDisplay();
         }
 
-        // Κλείσιμο οροφής
         private void btnRoofClose_Click(object sender, EventArgs e)
         {
-            lblRoofStatus.Text = "Κατάσταση Οροφής: Κλειστή";
-            lblRoofStatus.ForeColor = Color.Firebrick;
+            BusWeatherData.RoofOpen = false;
+            UpdateRoofDisplay();
         }
 
-        // Επιστροφή στον Πίνακα Ελέγχου Οδηγού
         private void btnBack_Click(object sender, EventArgs e)
         {
             DriverDashboard driverDashboard = new DriverDashboard();
             driverDashboard.Show();
             this.Close();
+        }
+
+        private void lblTitle_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

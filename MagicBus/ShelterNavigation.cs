@@ -20,6 +20,8 @@ namespace MagicBus
             {
                 showRoute = false;
                 picRoute.Invalidate();
+                lblRouteDetails.Text =
+                    "Επιλέξτε χώρο και πατήστε «Πλοήγηση στον χώρο».";
             };
         }
 
@@ -79,6 +81,9 @@ namespace MagicBus
         }
         private void cmbStart_SelectedIndexChanged(object sender, EventArgs e)
         {
+            showRoute = false;
+            picRoute.Invalidate();
+            lblRouteDetails.Text = "Επιλέξτε χώρο και πατήστε «Πλοήγηση στον χώρο».";
             lstShelters.Items.Clear();
 
             if (cmbStart.SelectedItem == null)
@@ -100,11 +105,15 @@ namespace MagicBus
         private void btnNavigate_Click(object sender, EventArgs e)
         {
             if (cmbStart.SelectedItem == null ||
-    lstShelters.SelectedItem == null)
+                lstShelters.SelectedItem == null)
             {
                 MessageBox.Show("Επιλέξτε στάση και χώρο προστασίας.");
                 return;
             }
+
+            lblRouteDetails.Text =
+                $"Στάση: {cmbStart.SelectedItem}\n"
+                + $"Χώρος: {lstShelters.SelectedItem}";
 
             showRoute = true;
             picRoute.Invalidate();

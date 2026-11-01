@@ -53,15 +53,15 @@ namespace MagicBus
             Point[] route = lstShelters.SelectedIndex == 0
                 ? new[]
                 {
-            new Point(40, 45),
-            new Point(390, 45)
+                    new Point(40, 45),
+                    new Point(390, 45)
                 }
                 : new[]
                 {
-            new Point(40, 45),
-            new Point(210, 45),
-            new Point(210, 65),
-            new Point(390, 65)
+                    new Point(40, 45),
+                    new Point(210, 45),
+                    new Point(210, 65),
+                    new Point(390, 65)
                 };
 
             e.Graphics.DrawLines(routePen, route);
@@ -79,6 +79,7 @@ namespace MagicBus
                 "Σχηματική διαδρομή — προσομοίωση",
                 smallFont, Brushes.DimGray, 110, 78);
         }
+
         private void cmbStart_SelectedIndexChanged(object sender, EventArgs e)
         {
             showRoute = false;

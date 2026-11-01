@@ -38,6 +38,7 @@
             lblSimulation = new Label();
             picRoute = new PictureBox();
             lblRouteDetails = new Label();
+            btnHelp = new Button();
             ((System.ComponentModel.ISupportInitialize)picRoute).BeginInit();
             SuspendLayout();
             // 
@@ -49,7 +50,7 @@
             lblTitle.Location = new Point(49, 39);
             lblTitle.Margin = new Padding(5, 0, 5, 0);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(473, 46);
+            lblTitle.Size = new Size(379, 37);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Προστασία από κακοκαιρία";
             // 
@@ -60,7 +61,7 @@
             lblStart.Location = new Point(30, 110);
             lblStart.Margin = new Padding(5, 0, 5, 0);
             lblStart.Name = "lblStart";
-            lblStart.Size = new Size(271, 31);
+            lblStart.Size = new Size(226, 25);
             lblStart.TabIndex = 1;
             lblStart.Text = "Σε ποια στάση βρίσκεστε;";
             // 
@@ -72,7 +73,7 @@
             cmbStart.Location = new Point(30, 150);
             cmbStart.Margin = new Padding(5);
             cmbStart.Name = "cmbStart";
-            cmbStart.Size = new Size(350, 39);
+            cmbStart.Size = new Size(350, 33);
             cmbStart.TabIndex = 2;
             cmbStart.SelectedIndexChanged += cmbStart_SelectedIndexChanged;
             // 
@@ -81,7 +82,7 @@
             lblShelters.AutoSize = true;
             lblShelters.Location = new Point(30, 220);
             lblShelters.Name = "lblShelters";
-            lblShelters.Size = new Size(320, 31);
+            lblShelters.Size = new Size(268, 25);
             lblShelters.TabIndex = 3;
             lblShelters.Text = "Διαθέσιμοι χώροι προστασίας";
             // 
@@ -90,7 +91,7 @@
             lstShelters.FormattingEnabled = true;
             lstShelters.Location = new Point(30, 260);
             lstShelters.Name = "lstShelters";
-            lstShelters.Size = new Size(400, 190);
+            lstShelters.Size = new Size(400, 179);
             lstShelters.TabIndex = 4;
             // 
             // btnNavigate
@@ -143,12 +144,26 @@
             lblRouteDetails.TabIndex = 9;
             lblRouteDetails.Text = "Επιλέξτε στάση και χώρο προστασίας.";
             // 
+            // btnHelp
+            // 
+            btnHelp.BackColor = Color.MidnightBlue;
+            btnHelp.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 161);
+            btnHelp.ForeColor = Color.White;
+            btnHelp.Location = new Point(788, 19);
+            btnHelp.Name = "btnHelp";
+            btnHelp.Size = new Size(50, 46);
+            btnHelp.TabIndex = 10;
+            btnHelp.Text = "?";
+            btnHelp.UseVisualStyleBackColor = false;
+            btnHelp.Click += btnHelp_Click;
+            // 
             // ShelterNavigation
             // 
-            AutoScaleDimensions = new SizeF(13F, 31F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(982, 603);
+            Controls.Add(btnHelp);
             Controls.Add(lblRouteDetails);
             Controls.Add(picRoute);
             Controls.Add(lblSimulation);
@@ -181,5 +196,6 @@
         private Label lblSimulation;
         private PictureBox picRoute;
         private Label lblRouteDetails;
+        private Button btnHelp;
     }
 }

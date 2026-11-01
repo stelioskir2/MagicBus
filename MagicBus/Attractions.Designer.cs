@@ -39,9 +39,9 @@
             // 
             lblTitle.AutoSize = true;
             lblTitle.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 161);
-            lblTitle.Location = new Point(30, 25);
+            lblTitle.Location = new Point(26, 19);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(500, 46);
+            lblTitle.Size = new Size(398, 37);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Αξιοθέατα της Θεσσαλονίκης";
             // 
@@ -50,9 +50,10 @@
             lstAttractions.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 161);
             lstAttractions.FormattingEnabled = true;
             lstAttractions.Items.AddRange(new object[] { "Λευκός Πύργος", "Πλατεία Αριστοτέλους", "Άγιος Δημήτριος", "Ροτόντα", "Καμάρα" });
-            lstAttractions.Location = new Point(30, 110);
+            lstAttractions.Location = new Point(26, 82);
+            lstAttractions.Margin = new Padding(3, 2, 3, 2);
             lstAttractions.Name = "lstAttractions";
-            lstAttractions.Size = new Size(350, 283);
+            lstAttractions.Size = new Size(307, 204);
             lstAttractions.TabIndex = 1;
             // 
             // btnDetails
@@ -60,9 +61,10 @@
             btnDetails.BackColor = Color.MidnightBlue;
             btnDetails.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 161);
             btnDetails.ForeColor = Color.White;
-            btnDetails.Location = new Point(420, 110);
+            btnDetails.Location = new Point(368, 82);
+            btnDetails.Margin = new Padding(3, 2, 3, 2);
             btnDetails.Name = "btnDetails";
-            btnDetails.Size = new Size(300, 60);
+            btnDetails.Size = new Size(262, 45);
             btnDetails.TabIndex = 2;
             btnDetails.Text = "Πληροφορίες αξιοθέατου";
             btnDetails.UseMnemonic = false;
@@ -72,9 +74,10 @@
             // btnBack
             // 
             btnBack.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 161);
-            btnBack.Location = new Point(30, 530);
+            btnBack.Location = new Point(12, 562);
+            btnBack.Margin = new Padding(3, 2, 3, 2);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(220, 50);
+            btnBack.Size = new Size(192, 38);
             btnBack.TabIndex = 3;
             btnBack.Text = "Επιστροφή στο μενού";
             btnBack.UseVisualStyleBackColor = true;
@@ -86,9 +89,10 @@
             btnHelp.FlatStyle = FlatStyle.Flat;
             btnHelp.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 161);
             btnHelp.ForeColor = Color.White;
-            btnHelp.Location = new Point(900, 25);
+            btnHelp.Location = new Point(928, 11);
+            btnHelp.Margin = new Padding(3, 2, 3, 2);
             btnHelp.Name = "btnHelp";
-            btnHelp.Size = new Size(50, 50);
+            btnHelp.Size = new Size(44, 38);
             btnHelp.TabIndex = 4;
             btnHelp.Text = "?";
             btnHelp.UseVisualStyleBackColor = false;
@@ -96,15 +100,16 @@
             // 
             // Attractions
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(982, 603);
+            ClientSize = new Size(984, 611);
             Controls.Add(btnHelp);
             Controls.Add(btnBack);
             Controls.Add(btnDetails);
             Controls.Add(lstAttractions);
             Controls.Add(lblTitle);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Attractions";
             StartPosition = FormStartPosition.CenterParent;
             Text = "MagicBus — Αξιοθέατα";

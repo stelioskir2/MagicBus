@@ -43,8 +43,8 @@ namespace MagicBus
 
                 1 => new[]
                 {
-                    "Εστιατόριο Α — Παραλία",
-                    "Εστιατόριο Β — Κέντρο"
+                    "Παλάτι",
+                    "Φουλ του Μεζέ"
                 },
 
                 2 => new[]
@@ -77,16 +77,18 @@ namespace MagicBus
                 return;
             }
 
-            if (cmbCategory.SelectedIndex == 1)
-            {
-                MessageBox.Show(
-                    "Τα εστιατόρια είναι δοκιμαστικές εγγραφές. "
-                    + "Η πλοήγηση θα ενεργοποιηθεί όταν προστεθούν οι διευθύνσεις τους.");
-                return;
-            }
-
             string start = cmbStart.SelectedItem.ToString()!;
             string destination = lstDestinations.SelectedItem.ToString()!;
+
+            if (cmbCategory.SelectedIndex == 1)
+            {
+                destination = destination switch
+                {
+                    "Παλάτι" => "Παλάτι, Πλατεία Μοριχόβου 3",
+                    "Φουλ του Μεζέ" => "Φουλ του Μεζέ, Κατούνη 3",
+                    _ => destination
+                };
+            }
 
             if (start == destination)
             {

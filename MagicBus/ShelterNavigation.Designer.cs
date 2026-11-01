@@ -37,6 +37,7 @@
             btnBack = new Button();
             lblSimulation = new Label();
             picRoute = new PictureBox();
+            lblRouteDetails = new Label();
             ((System.ComponentModel.ISupportInitialize)picRoute).BeginInit();
             SuspendLayout();
             // 
@@ -119,7 +120,7 @@
             lblSimulation.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 161);
             lblSimulation.Location = new Point(470, 340);
             lblSimulation.Name = "lblSimulation";
-            lblSimulation.Size = new Size(450, 80);
+            lblSimulation.Size = new Size(450, 60);
             lblSimulation.TabIndex = 7;
             lblSimulation.Text = "Εκπαιδευτική προσομοίωση — οι χώροι είναι φανταστικοί.";
             // 
@@ -127,11 +128,20 @@
             // 
             picRoute.BackColor = Color.White;
             picRoute.BorderStyle = BorderStyle.FixedSingle;
-            picRoute.Location = new Point(470, 420);
+            picRoute.Location = new Point(470, 400);
             picRoute.Name = "picRoute";
             picRoute.Size = new Size(450, 100);
             picRoute.TabIndex = 8;
             picRoute.TabStop = false;
+            // 
+            // lblRouteDetails
+            // 
+            lblRouteDetails.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 161);
+            lblRouteDetails.Location = new Point(470, 510);
+            lblRouteDetails.Name = "lblRouteDetails";
+            lblRouteDetails.Size = new Size(450, 80);
+            lblRouteDetails.TabIndex = 9;
+            lblRouteDetails.Text = "Επιλέξτε στάση και χώρο προστασίας.";
             // 
             // ShelterNavigation
             // 
@@ -139,6 +149,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(982, 603);
+            Controls.Add(lblRouteDetails);
             Controls.Add(picRoute);
             Controls.Add(lblSimulation);
             Controls.Add(btnBack);
@@ -169,5 +180,6 @@
         private Button btnBack;
         private Label lblSimulation;
         private PictureBox picRoute;
+        private Label lblRouteDetails;
     }
 }

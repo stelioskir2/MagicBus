@@ -70,5 +70,45 @@ namespace MagicBus
             using CafeOrders cafeOrders = new CafeOrders();
             cafeOrders.ShowDialog(this);
         }
+
+        private void btnCompanyNotifications_Click(object sender, EventArgs e)
+        {
+            var items = LostItemsData.Items
+    .Where(item => item.FoundAt.Date == DateTime.Today)
+    .ToList();
+
+            if (items.Count == 0)
+            {
+                MessageBox.Show(
+                    this,
+                    "Δεν υπάρχουν σημερινές ειδοποιήσεις ευρημάτων.",
+                    "Εταιρεία — Προσομοίωση");
+                return;
+            }
+
+            StringBuilder message = new StringBuilder();
+
+            message.AppendLine("Σημερινές ειδοποιήσεις προς την εταιρεία:");
+            message.AppendLine();
+
+            foreach (var item in items)
+            {
+                message.AppendLine(
+                    $"{item.FoundAt:dd/MM/yyyy HH:mm} — "
+                    + $"{item.Name} — {item.Floor}");
+                message.AppendLine();
+            }
+
+            message.AppendLine(
+                "Τοπική εκπαιδευτική προσομοίωση. "
+                + "Δεν έχει πραγματοποιηθεί εξωτερική αποστολή.");
+
+            MessageBox.Show(
+                this,
+                message.ToString(),
+                "Εταιρεία — Προσομοίωση",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+        }
     }
 }

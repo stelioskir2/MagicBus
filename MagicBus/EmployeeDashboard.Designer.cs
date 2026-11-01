@@ -25,6 +25,7 @@
             btnRobot = new Button();
             lblFoundItems = new Label();
             btnCafeOrders = new Button();
+            btnCompanyNotifications = new Button();
             SuspendLayout();
             // 
             // btnPassengers
@@ -101,9 +102,7 @@
             // 
             btnRobot.BackColor = Color.MidnightBlue;
             btnRobot.FlatStyle = FlatStyle.Flat;
-            btnRobot.Font = new Font(
-                "Segoe UI", 13.8F, FontStyle.Bold,
-                GraphicsUnit.Point, 161);
+            btnRobot.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 161);
             btnRobot.ForeColor = Color.White;
             btnRobot.Location = new Point(582, 360);
             btnRobot.Name = "btnRobot";
@@ -115,13 +114,11 @@
             // 
             // lblFoundItems
             // 
-            lblFoundItems.Font = new Font(
-                "Segoe UI", 12F, FontStyle.Bold,
-                GraphicsUnit.Point, 161);
+            lblFoundItems.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 161);
             lblFoundItems.ForeColor = Color.MidnightBlue;
-            lblFoundItems.Location = new Point(760, 600);
+            lblFoundItems.Location = new Point(920, 360);
             lblFoundItems.Name = "lblFoundItems";
-            lblFoundItems.Size = new Size(330, 100);
+            lblFoundItems.Size = new Size(190, 140);
             lblFoundItems.TabIndex = 7;
             lblFoundItems.Text = "Σημερινά ευρήματα: 0";
             // 
@@ -129,8 +126,7 @@
             // 
             btnCafeOrders.BackColor = Color.MidnightBlue;
             btnCafeOrders.FlatStyle = FlatStyle.Flat;
-            btnCafeOrders.Font = new Font(
-                "Segoe UI", 14.25F, FontStyle.Bold);
+            btnCafeOrders.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             btnCafeOrders.ForeColor = Color.White;
             btnCafeOrders.Location = new Point(402, 505);
             btnCafeOrders.Margin = new Padding(3, 4, 3, 4);
@@ -141,11 +137,24 @@
             btnCafeOrders.UseVisualStyleBackColor = false;
             btnCafeOrders.Click += btnCafeOrders_Click;
             // 
+            // btnCompanyNotifications
+            // 
+            btnCompanyNotifications.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 161);
+            btnCompanyNotifications.ForeColor = Color.MidnightBlue;
+            btnCompanyNotifications.Location = new Point(14, 600);
+            btnCompanyNotifications.Name = "btnCompanyNotifications";
+            btnCompanyNotifications.Size = new Size(300, 70);
+            btnCompanyNotifications.TabIndex = 8;
+            btnCompanyNotifications.Text = "Ενημέρωση εταιρείας";
+            btnCompanyNotifications.UseVisualStyleBackColor = true;
+            btnCompanyNotifications.Click += btnCompanyNotifications_Click;
+            // 
             // EmployeeDashboard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1125, 815);
+            Controls.Add(btnCompanyNotifications);
             Controls.Add(lblFoundItems);
             Controls.Add(btnCafeOrders);
             Controls.Add(btnRobot);
@@ -171,5 +180,6 @@
         private Button btnRobot;
         private Label lblFoundItems;
         private Button btnCafeOrders;
+        private Button btnCompanyNotifications;
     }
 }

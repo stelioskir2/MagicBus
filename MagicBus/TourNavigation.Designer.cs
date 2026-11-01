@@ -53,7 +53,7 @@
             cmbCategory.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbCategory.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 161);
             cmbCategory.FormattingEnabled = true;
-            cmbCategory.Items.AddRange(new object[] { "Αξιοθέατα", "Συνεργαζόμενα εστιατόρια", "Στάσεις λεωφορείου" });
+            cmbCategory.Items.AddRange(new object[] { "Αξιοθέατα", "Εστιατόρια (ενδεικτικά)", "Στάσεις λεωφορείου" });
             cmbCategory.Location = new Point(30, 140);
             cmbCategory.Name = "cmbCategory";
             cmbCategory.Size = new Size(350, 39);

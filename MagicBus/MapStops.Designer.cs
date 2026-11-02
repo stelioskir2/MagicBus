@@ -51,13 +51,14 @@
             // 
             // lblTitle
             // 
-            lblTitle.AutoSize = true;
+            lblTitle.AutoSize = false;
             lblTitle.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 161);
-            lblTitle.Location = new Point(26, 19);
+            lblTitle.Location = new Point(71, 19);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(483, 37);
+            lblTitle.Size = new Size(717, 37);
             lblTitle.TabIndex = 1;
             lblTitle.Text = "Θεσσαλονίκη — Χάρτης και στάσεις";
+            lblTitle.TextAlign = ContentAlignment.MiddleCenter;
             lblTitle.Click += label1_Click;
             // 
             // lstStops

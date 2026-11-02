@@ -44,14 +44,15 @@
             // 
             // lblTitle
             // 
-            lblTitle.AutoSize = true;
+            lblTitle.AutoSize = false;
             lblTitle.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 161);
             lblTitle.ForeColor = Color.MidnightBlue;
-            lblTitle.Location = new Point(26, 19);
+            lblTitle.Location = new Point(71, 19);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(429, 41);
+            lblTitle.Size = new Size(717, 41);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Καλώς ήρθατε στο MagicBus";
+            lblTitle.TextAlign = ContentAlignment.MiddleCenter;
             lblTitle.Click += lblTitle_Click;
             // 
             // btnMap

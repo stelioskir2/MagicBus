@@ -48,14 +48,15 @@
             // 
             // lblTitle
             // 
-            lblTitle.AutoSize = true;
+            lblTitle.AutoSize = false;
             lblTitle.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 161);
             lblTitle.ForeColor = Color.MidnightBlue;
             lblTitle.Location = new Point(30, 25);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(404, 46);
+            lblTitle.Size = new Size(922, 46);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Ειδοποιήσεις οδήγησης";
+            lblTitle.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblSpeedTitle
             // 

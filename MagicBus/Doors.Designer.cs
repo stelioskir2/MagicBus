@@ -47,14 +47,15 @@
             // 
             // lblTitle
             // 
-            lblTitle.AutoSize = true;
+            lblTitle.AutoSize = false;
             lblTitle.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 161);
             lblTitle.ForeColor = Color.MidnightBlue;
             lblTitle.Location = new Point(26, 19);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(315, 37);
+            lblTitle.Size = new Size(807, 37);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Αποβίβαση και πόρτες";
+            lblTitle.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblStop
             // 

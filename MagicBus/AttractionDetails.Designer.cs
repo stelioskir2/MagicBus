@@ -40,14 +40,15 @@
             // 
             // lblTitle
             // 
-            lblTitle.AutoSize = true;
+            lblTitle.AutoSize = false;
             lblTitle.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 161);
             lblTitle.ForeColor = Color.MidnightBlue;
-            lblTitle.Location = new Point(26, 19);
+            lblTitle.Location = new Point(80, 19);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(352, 37);
+            lblTitle.Size = new Size(699, 37);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Πληροφορίες αξιοθέατου";
+            lblTitle.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // picAttraction
             // 

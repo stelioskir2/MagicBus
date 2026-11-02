@@ -67,16 +67,17 @@
                 cmbCategory_SelectedIndexChanged;
 
             // lblTitle
-            lblTitle.AutoSize = true;
+            lblTitle.AutoSize = false;
             lblTitle.Font = new Font(
                 "Segoe UI", 19.8000011F, FontStyle.Bold,
                 GraphicsUnit.Point, 161);
             lblTitle.ForeColor = Color.MidnightBlue;
-            lblTitle.Location = new Point(26, 19);
+            lblTitle.Location = new Point(71, 19);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(282, 37);
+            lblTitle.Size = new Size(717, 37);
             lblTitle.TabIndex = 2;
             lblTitle.Text = "Πού θέλετε να πάτε;";
+            lblTitle.TextAlign = ContentAlignment.MiddleCenter;
 
             // lstDestinations
             lstDestinations.Font = new Font(

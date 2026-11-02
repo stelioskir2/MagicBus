@@ -10,6 +10,7 @@
             {
                 components.Dispose();
             }
+
             base.Dispose(disposing);
         }
 
@@ -33,178 +34,180 @@
             cmbWeather = new ComboBox();
             lblWeatherScenario = new Label();
             SuspendLayout();
-            // 
+
             // lblTitle
-            // 
-            lblTitle.AutoSize = true;
+            lblTitle.AutoSize = false;
             lblTitle.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold);
             lblTitle.ForeColor = Color.MidnightBlue;
-            lblTitle.Location = new Point(377, 47);
+            lblTitle.Location = new Point(30, 45);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(454, 46);
+            lblTitle.Size = new Size(922, 70);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Καιρός && Έλεγχος Οροφής";
-            // 
+            lblTitle.TextAlign = ContentAlignment.MiddleCenter;
+
             // lblWeatherTitle
-            // 
-            lblWeatherTitle.AutoSize = true;
+            lblWeatherTitle.AutoSize = false;
             lblWeatherTitle.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             lblWeatherTitle.ForeColor = Color.DarkSlateGray;
-            lblWeatherTitle.Location = new Point(91, 133);
+            lblWeatherTitle.Location = new Point(45, 130);
             lblWeatherTitle.Name = "lblWeatherTitle";
-            lblWeatherTitle.Size = new Size(228, 37);
+            lblWeatherTitle.Size = new Size(440, 45);
             lblWeatherTitle.TabIndex = 1;
             lblWeatherTitle.Text = "Στοιχεία Καιρού";
-            // 
+            lblWeatherTitle.TextAlign = ContentAlignment.MiddleLeft;
+
             // lblWeatherInfo
-            // 
-            lblWeatherInfo.AutoSize = true;
+            lblWeatherInfo.AutoSize = false;
             lblWeatherInfo.Font = new Font("Segoe UI", 12F);
-            lblWeatherInfo.Location = new Point(91, 200);
+            lblWeatherInfo.Location = new Point(45, 185);
             lblWeatherInfo.Name = "lblWeatherInfo";
-            lblWeatherInfo.Size = new Size(284, 28);
+            lblWeatherInfo.Size = new Size(440, 36);
             lblWeatherInfo.TabIndex = 2;
             lblWeatherInfo.Text = "Εξωτερική Θερμοκρασία: 24°C";
-            // 
+            lblWeatherInfo.TextAlign = ContentAlignment.MiddleLeft;
+
             // lblFeelsLike
-            // 
-            lblFeelsLike.AutoSize = true;
+            lblFeelsLike.AutoSize = false;
             lblFeelsLike.Font = new Font("Segoe UI", 12F);
-            lblFeelsLike.Location = new Point(91, 253);
+            lblFeelsLike.Location = new Point(45, 225);
             lblFeelsLike.Name = "lblFeelsLike";
-            lblFeelsLike.Size = new Size(278, 28);
+            lblFeelsLike.Size = new Size(440, 36);
             lblFeelsLike.TabIndex = 3;
             lblFeelsLike.Text = "Αίσθηση Θερμοκρασίας: 26°C";
-            // 
+            lblFeelsLike.TextAlign = ContentAlignment.MiddleLeft;
+
             // lblHumidity
-            // 
-            lblHumidity.AutoSize = true;
+            lblHumidity.AutoSize = false;
             lblHumidity.Font = new Font("Segoe UI", 12F);
-            lblHumidity.Location = new Point(91, 307);
+            lblHumidity.Location = new Point(45, 265);
             lblHumidity.Name = "lblHumidity";
-            lblHumidity.Size = new Size(133, 28);
+            lblHumidity.Size = new Size(440, 36);
             lblHumidity.TabIndex = 4;
             lblHumidity.Text = "Υγρασία: 45%";
-            // 
+            lblHumidity.TextAlign = ContentAlignment.MiddleLeft;
+
             // lblPollen
-            // 
-            lblPollen.AutoSize = true;
+            lblPollen.AutoSize = false;
             lblPollen.Font = new Font("Segoe UI", 12F);
-            lblPollen.Location = new Point(91, 360);
+            lblPollen.Location = new Point(45, 305);
             lblPollen.Name = "lblPollen";
-            lblPollen.Size = new Size(215, 28);
+            lblPollen.Size = new Size(440, 36);
             lblPollen.TabIndex = 5;
             lblPollen.Text = "Φορτίο Γύρης: Χαμηλό";
-            // 
+            lblPollen.TextAlign = ContentAlignment.MiddleLeft;
+
             // lblVisibility
-            // 
-            lblVisibility.AutoSize = true;
+            lblVisibility.AutoSize = false;
             lblVisibility.Font = new Font("Segoe UI", 12F);
-            lblVisibility.Location = new Point(91, 413);
+            lblVisibility.Location = new Point(45, 345);
             lblVisibility.Name = "lblVisibility";
-            lblVisibility.Size = new Size(190, 28);
+            lblVisibility.Size = new Size(440, 36);
             lblVisibility.TabIndex = 6;
-            lblVisibility.Text = "Ορατότητα: Άριστη";
-            // 
+            lblVisibility.Text = "Ορατότητα: Καλή";
+            lblVisibility.TextAlign = ContentAlignment.MiddleLeft;
+
             // lblSunSet
-            // 
-            lblSunSet.AutoSize = true;
+            lblSunSet.AutoSize = false;
             lblSunSet.Font = new Font("Segoe UI", 12F);
-            lblSunSet.Location = new Point(91, 467);
+            lblSunSet.Location = new Point(45, 385);
             lblSunSet.Name = "lblSunSet";
-            lblSunSet.Size = new Size(229, 28);
+            lblSunSet.Size = new Size(440, 36);
             lblSunSet.TabIndex = 7;
             lblSunSet.Text = "Ώρα Δύσης Ηλίου: 20:30";
-            // 
+            lblSunSet.TextAlign = ContentAlignment.MiddleLeft;
+
             // lblRoofTitle
-            // 
-            lblRoofTitle.AutoSize = true;
+            lblRoofTitle.AutoSize = false;
             lblRoofTitle.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             lblRoofTitle.ForeColor = Color.DarkSlateGray;
-            lblRoofTitle.Location = new Point(663, 133);
+            lblRoofTitle.Location = new Point(525, 130);
             lblRoofTitle.Name = "lblRoofTitle";
-            lblRoofTitle.Size = new Size(404, 37);
+            lblRoofTitle.Size = new Size(412, 65);
             lblRoofTitle.TabIndex = 8;
             lblRoofTitle.Text = "Έλεγχος Οροφής Λεωφορείου";
-            // 
+            lblRoofTitle.TextAlign = ContentAlignment.MiddleCenter;
+
             // btnRoofOpen
-            // 
             btnRoofOpen.BackColor = Color.ForestGreen;
-            btnRoofOpen.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            btnRoofOpen.FlatStyle = FlatStyle.Flat;
+            btnRoofOpen.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
             btnRoofOpen.ForeColor = Color.White;
-            btnRoofOpen.Location = new Point(663, 200);
+            btnRoofOpen.Location = new Point(535, 220);
             btnRoofOpen.Margin = new Padding(3, 4, 3, 4);
             btnRoofOpen.Name = "btnRoofOpen";
-            btnRoofOpen.Size = new Size(160, 67);
-            btnRoofOpen.TabIndex = 9;
-            btnRoofOpen.Text = "Άνοιγμα Οροφής";
+            btnRoofOpen.Size = new Size(180, 75);
+            btnRoofOpen.TabIndex = 1;
+            btnRoofOpen.Text = "Άνοιγμα\nΟροφής";
             btnRoofOpen.UseVisualStyleBackColor = false;
             btnRoofOpen.Click += btnRoofOpen_Click;
-            // 
+
             // btnRoofClose
-            // 
             btnRoofClose.BackColor = Color.Firebrick;
-            btnRoofClose.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            btnRoofClose.FlatStyle = FlatStyle.Flat;
+            btnRoofClose.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
             btnRoofClose.ForeColor = Color.White;
-            btnRoofClose.Location = new Point(846, 200);
+            btnRoofClose.Location = new Point(745, 220);
             btnRoofClose.Margin = new Padding(3, 4, 3, 4);
             btnRoofClose.Name = "btnRoofClose";
-            btnRoofClose.Size = new Size(160, 67);
-            btnRoofClose.TabIndex = 10;
-            btnRoofClose.Text = "Κλείσιμο Οροφής";
+            btnRoofClose.Size = new Size(180, 75);
+            btnRoofClose.TabIndex = 2;
+            btnRoofClose.Text = "Κλείσιμο\nΟροφής";
             btnRoofClose.UseVisualStyleBackColor = false;
             btnRoofClose.Click += btnRoofClose_Click;
-            // 
+
             // lblRoofStatus
-            // 
-            lblRoofStatus.AutoSize = true;
+            lblRoofStatus.AutoSize = false;
             lblRoofStatus.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             lblRoofStatus.ForeColor = Color.Firebrick;
-            lblRoofStatus.Location = new Point(720, 300);
+            lblRoofStatus.Location = new Point(525, 320);
             lblRoofStatus.Name = "lblRoofStatus";
-            lblRoofStatus.Size = new Size(290, 28);
+            lblRoofStatus.Size = new Size(412, 70);
             lblRoofStatus.TabIndex = 11;
             lblRoofStatus.Text = "Κατάσταση Οροφής: Κλειστή";
-            // 
+            lblRoofStatus.TextAlign = ContentAlignment.MiddleCenter;
+
             // btnBack
-            // 
+            btnBack.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             btnBack.BackColor = SystemColors.Control;
             btnBack.Font = new Font("Segoe UI", 10F);
             btnBack.ForeColor = Color.Black;
-            btnBack.Location = new Point(14, 695);
+            btnBack.Location = new Point(30, 525);
             btnBack.Margin = new Padding(3, 4, 3, 4);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(217, 68);
-            btnBack.TabIndex = 12;
-            btnBack.Text = "Επιστροφή στον 'Ελεγχο Οδηγού";
+            btnBack.Size = new Size(280, 50);
+            btnBack.TabIndex = 3;
+            btnBack.Text = "Επιστροφή στον πίνακα οδηγού";
             btnBack.UseVisualStyleBackColor = true;
             btnBack.Click += btnBack_Click;
-            // 
+
             // cmbWeather
-            // 
             cmbWeather.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbWeather.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 161);
+            cmbWeather.Font = new Font(
+                "Segoe UI", 12F, FontStyle.Regular,
+                GraphicsUnit.Point, 161);
             cmbWeather.FormattingEnabled = true;
-            cmbWeather.Location = new Point(91, 560);
+            cmbWeather.Location = new Point(45, 475);
             cmbWeather.Name = "cmbWeather";
             cmbWeather.Size = new Size(300, 36);
-            cmbWeather.TabIndex = 13;
-            // 
+            cmbWeather.TabIndex = 0;
+
             // lblWeatherScenario
-            // 
-            lblWeatherScenario.AutoSize = true;
-            lblWeatherScenario.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 161);
-            lblWeatherScenario.Location = new Point(91, 520);
+            lblWeatherScenario.AutoSize = false;
+            lblWeatherScenario.Font = new Font(
+                "Segoe UI", 12F, FontStyle.Regular,
+                GraphicsUnit.Point, 161);
+            lblWeatherScenario.Location = new Point(45, 435);
             lblWeatherScenario.Name = "lblWeatherScenario";
-            lblWeatherScenario.Size = new Size(234, 28);
+            lblWeatherScenario.Size = new Size(440, 36);
             lblWeatherScenario.TabIndex = 14;
             lblWeatherScenario.Text = "Καιρός — προσομοίωση";
-            // 
+            lblWeatherScenario.TextAlign = ContentAlignment.MiddleLeft;
+
             // WeatherAndRoof
-            // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1125, 815);
+            ClientSize = new Size(982, 603);
             Controls.Add(lblWeatherScenario);
             Controls.Add(cmbWeather);
             Controls.Add(btnBack);
@@ -222,10 +225,10 @@
             Controls.Add(lblTitle);
             Margin = new Padding(3, 4, 3, 4);
             Name = "WeatherAndRoof";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Καιρός & Οροφή - MagicBus";
             Load += WeatherAndRoof_Load;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion

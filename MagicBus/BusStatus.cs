@@ -52,9 +52,7 @@ namespace MagicBus
         // Επιστροφή στον Πίνακα Ελέγχου Προσωπικού
         private void btnBack_Click(object sender, EventArgs e)
         {
-            EmployeeDashboard staffDashboard = new EmployeeDashboard();
-            staffDashboard.Show();
-            this.Close();
+            Close();
         }
     }
 }

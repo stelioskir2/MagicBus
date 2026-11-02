@@ -16,8 +16,8 @@ namespace MagicBus
         {
             InitializeComponent();
 
-            lblFoundItems.Left = btnClimate.Left
-                + (btnClimate.Width - lblFoundItems.Width) / 2;
+            lblFoundItems.Left =
+                (ClientSize.Width - lblFoundItems.Width) / 2;
 
             Activated += (_, _) =>
             {
@@ -37,18 +37,14 @@ namespace MagicBus
 
         private void btnClimate_Click(object sender, EventArgs e)
         {
-            // Ανοίγει τη φόρμα ελέγχου κλιματισμού
-            ClimateControl climateForm = new ClimateControl();
-            climateForm.Show();
-            this.Hide(); // Κρύβει προσωρινά το dashboard του οδηγού
+            using ClimateControl climateForm = new ClimateControl();
+            climateForm.ShowDialog(this);
         }
 
         private void btnWeatherRoof_Click(object sender, EventArgs e)
         {
-            // Ανοίγει τη νέα φόρμα Καιρού & Οροφής
-            WeatherAndRoof weatherForm = new WeatherAndRoof();
-            weatherForm.Show();
-            this.Hide(); // Κρύβει προσωρινά το dashboard του οδηγού
+            using WeatherAndRoof weatherForm = new WeatherAndRoof();
+            weatherForm.ShowDialog(this);
         }
 
         private void btnSafety_Click(object sender, EventArgs e)
@@ -65,9 +61,7 @@ namespace MagicBus
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            RoleSelection roleForm = new RoleSelection();
-            roleForm.Show();
-            this.Close();
+            Close();
         }
 
         private void DriverDashboard_Load_1(object sender, EventArgs e)

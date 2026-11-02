@@ -31,21 +31,46 @@ namespace MagicBus
             UpdateButtons();
         }
 
-        private PlacedOrder? SelectedOrder => lstOrders.SelectedItem as PlacedOrder;
+        private PlacedOrder? SelectedOrder =>
+            lstOrders.SelectedItem as PlacedOrder;
 
         private void UpdateButtons()
         {
             PlacedOrder? order = SelectedOrder;
 
-            btnPrepare.Enabled = order?.Status == PlacedOrder.StatusNew;
-            btnSend.Enabled = order?.Status == PlacedOrder.StatusPreparing;
-            cmbStop.Enabled = order?.Status == PlacedOrder.StatusPreparing;
-            btnDelivered.Enabled = order?.Status == PlacedOrder.StatusReady;
+            btnPrepare.Enabled =
+                order?.Status == PlacedOrder.StatusNew;
+
+            btnSend.Enabled =
+                order?.Status == PlacedOrder.StatusPreparing;
+
+            cmbStop.Enabled =
+                order?.Status == PlacedOrder.StatusPreparing;
+
+            btnDelivered.Enabled =
+                order?.Status == PlacedOrder.StatusReady;
+
+            foreach (Button button in new[]
+            {
+                btnPrepare,
+                btnSend,
+                btnDelivered
+            })
+            {
+                button.BackColor = button.Enabled
+                    ? Color.MidnightBlue
+                    : SystemColors.Control;
+
+                button.ForeColor = button.Enabled
+                    ? Color.White
+                    : SystemColors.GrayText;
+            }
         }
 
         private void ShowOrder()
         {
             PlacedOrder? order = SelectedOrder;
+
             if (order == null)
             {
                 return;
@@ -54,10 +79,12 @@ namespace MagicBus
             txtDetails.Text = order.Details();
             lblStatus.Text = "Κατάσταση: " + order.Status;
             cmbStop.SelectedItem = order.DeliveryStop;
+
             UpdateButtons();
         }
 
-        private void lstOrders_SelectedIndexChanged(object sender, EventArgs e)
+        private void lstOrders_SelectedIndexChanged(
+            object sender, EventArgs e)
         {
             ShowOrder();
         }
@@ -65,6 +92,7 @@ namespace MagicBus
         private void btnPrepare_Click(object sender, EventArgs e)
         {
             PlacedOrder? order = SelectedOrder;
+
             if (order == null)
             {
                 return;
@@ -77,6 +105,7 @@ namespace MagicBus
         private void btnSend_Click(object sender, EventArgs e)
         {
             PlacedOrder? order = SelectedOrder;
+
             if (order == null)
             {
                 return;
@@ -89,6 +118,7 @@ namespace MagicBus
                     "Στάση παράδοσης",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
+
                 return;
             }
 
@@ -107,6 +137,7 @@ namespace MagicBus
         private void btnDelivered_Click(object sender, EventArgs e)
         {
             PlacedOrder? order = SelectedOrder;
+
             if (order == null)
             {
                 return;

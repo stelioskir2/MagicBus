@@ -66,6 +66,7 @@ namespace MagicBus
         private void RefreshCart()
         {
             lstCart.Items.Clear();
+
             foreach (CartItem item in CafeOrder.Items)
             {
                 lstCart.Items.Add(item);
@@ -73,6 +74,14 @@ namespace MagicBus
 
             lblTotal.Text = $"Σύνολο: {CafeOrder.Total:0.00} €";
             btnPay.Enabled = CafeOrder.Items.Count > 0;
+
+            btnPay.BackColor = btnPay.Enabled
+                ? Color.MidnightBlue
+                : SystemColors.Control;
+
+            btnPay.ForeColor = btnPay.Enabled
+                ? Color.White
+                : SystemColors.GrayText;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -84,10 +93,15 @@ namespace MagicBus
                     "Προσθήκη στο καλάθι",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
+
                 return;
             }
 
-            CafeOrder.Add(product.Name, product.Price, (int)numQuantity.Value);
+            CafeOrder.Add(
+                product.Name,
+                product.Price,
+                (int)numQuantity.Value);
+
             numQuantity.Value = 1;
             RefreshCart();
         }
@@ -109,6 +123,7 @@ namespace MagicBus
                     "Αφαίρεση από το καλάθι",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
+
                 return;
             }
 
@@ -119,6 +134,7 @@ namespace MagicBus
         private void btnPay_Click(object sender, EventArgs e)
         {
             using Payment payment = new Payment();
+
             if (payment.ShowDialog(this) == DialogResult.OK)
             {
                 DialogResult = DialogResult.OK;

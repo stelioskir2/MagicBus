@@ -46,6 +46,11 @@ namespace MagicBus
             passengerTable.Rows.Add("TKT-107", "Sarah Connor", "+44 7700 900077", "19E");
 
             dgvPassengers.DataSource = passengerTable;
+
+            dgvPassengers.Columns["Κωδικός Εισιτηρίου"].FillWeight = 18;
+            dgvPassengers.Columns["Ονοματεπώνυμο"].FillWeight = 36;
+            dgvPassengers.Columns["Τηλέφωνο"].FillWeight = 36;
+            dgvPassengers.Columns["Θέση"].FillWeight = 10;
         }
 
         // Ενημέρωση ετικέτας διαθεσιμότητας θέσεων
@@ -96,9 +101,7 @@ namespace MagicBus
         // Επιστροφή στον Πίνακα Ελέγχου Προσωπικού
         private void btnBack_Click(object sender, EventArgs e)
         {
-            EmployeeDashboard staffDashboard = new EmployeeDashboard();
-            staffDashboard.Show();
-            this.Close();
+            Close();
         }
     }
 }

@@ -29,7 +29,16 @@ namespace MagicBus
             if (sound)
             {
                 SystemSounds.Exclamation.Play();
-                lstAlerts.Items.Insert(0, $"{DateTime.Now:HH:mm:ss} — {message.Replace("\n", " ")}");
+
+                lstAlerts.Text =
+                    $"{DateTime.Now:HH:mm:ss} — {message.Replace("\n", " ")}"
+                    + Environment.NewLine
+                    + Environment.NewLine
+                    + lstAlerts.Text;
+
+                lstAlerts.SelectionStart = 0;
+                lstAlerts.SelectionLength = 0;
+                lstAlerts.ScrollToCaret();
             }
         }
 

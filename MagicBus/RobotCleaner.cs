@@ -13,6 +13,23 @@ namespace MagicBus
         public RobotCleaner()
         {
             InitializeComponent();
+
+            foreach (Button button in new[] { btnStart, btnStop })
+            {
+                void UpdateColors()
+                {
+                    button.BackColor = button.Enabled
+                        ? Color.MidnightBlue
+                        : SystemColors.Control;
+
+                    button.ForeColor = button.Enabled
+                        ? Color.White
+                        : SystemColors.GrayText;
+                }
+
+                button.EnabledChanged += (_, _) => UpdateColors();
+                UpdateColors();
+            }
         }
 
         private void btnStart_Click(object sender, EventArgs e)
@@ -25,7 +42,8 @@ namespace MagicBus
 
             progressCleaning.Value = 0;
             lblProgress.Text = "Πρόοδος: 0%";
-            lblStatus.Text = $"Κατάσταση: Καθαρισμός — {cmbFloor.SelectedItem}";
+            lblStatus.Text =
+                $"Κατάσταση: Καθαρισμός — {cmbFloor.SelectedItem}";
 
             cmbFloor.Enabled = false;
             btnStart.Enabled = false;
@@ -37,8 +55,8 @@ namespace MagicBus
         private void timerCleaning_Tick(object sender, EventArgs e)
         {
             progressCleaning.Value = Math.Min(
-    progressCleaning.Value + 5,
-    progressCleaning.Maximum);
+                progressCleaning.Value + 5,
+                progressCleaning.Maximum);
 
             lblProgress.Text = $"Πρόοδος: {progressCleaning.Value}%";
 
@@ -71,7 +89,8 @@ namespace MagicBus
             {
                 timerCleaning.Stop();
 
-                lblStatus.Text = "Κατάσταση: Ο καθαρισμός ολοκληρώθηκε";
+                lblStatus.Text =
+                    "Κατάσταση: Ο καθαρισμός ολοκληρώθηκε";
 
                 cmbFloor.Enabled = true;
                 btnStart.Enabled = true;

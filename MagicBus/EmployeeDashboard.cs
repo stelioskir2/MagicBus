@@ -33,30 +33,25 @@ namespace MagicBus
 
         private void btnPassengers_Click(object sender, EventArgs e)
         {
-            PassengerManagement passengerForm = new PassengerManagement();
-            passengerForm.Show();
-            this.Hide();
+            using PassengerManagement passengerForm = new PassengerManagement();
+            passengerForm.ShowDialog(this);
         }
 
         private void btnBusStatus_Click(object sender, EventArgs e)
         {
-            BusStatus statusForm = new BusStatus();
-            statusForm.Show();
-            this.Hide();
+            using BusStatus statusForm = new BusStatus();
+            statusForm.ShowDialog(this);
         }
 
         private void btnSchedule_Click(object sender, EventArgs e)
         {
-            ScheduleAndStops scheduleForm = new ScheduleAndStops();
-            scheduleForm.Show();
-            this.Hide();
+            using ScheduleAndStops scheduleForm = new ScheduleAndStops();
+            scheduleForm.ShowDialog(this);
         }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            RoleSelection roleForm = new RoleSelection();
-            roleForm.Show();
-            this.Close();
+            Close();
         }
 
         private void btnRobot_Click(object sender, EventArgs e)

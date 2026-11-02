@@ -27,10 +27,8 @@ namespace MagicBus
 
         private void btnDriver_Click(object sender, EventArgs e)
         {
-            // Ανοίγει τον πίνακα ελέγχου του οδηγού (Άτομο 3)
-            DriverDashboard driverForm = new DriverDashboard();
-            driverForm.Show();
-            this.Hide();
+            using DriverDashboard driverForm = new DriverDashboard();
+            driverForm.ShowDialog(this);
         }
 
         private void btnEmployee_Click(object sender, EventArgs e)
@@ -52,9 +50,7 @@ namespace MagicBus
         }
         private void btnBack_Click(object sender, EventArgs e)
         {
-            Welcome welcomeForm = new Welcome();
-            welcomeForm.Show();
-            this.Close();
+            Close();
         }
 
         private void btnPassenger_Click_1(object sender, EventArgs e)

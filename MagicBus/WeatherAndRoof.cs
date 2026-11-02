@@ -115,9 +115,7 @@ namespace MagicBus
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            DriverDashboard driverDashboard = new DriverDashboard();
-            driverDashboard.Show();
-            this.Close();
+            Close();
         }
 
         private void lblTitle_Click(object sender, EventArgs e)

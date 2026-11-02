@@ -53,6 +53,10 @@ namespace MagicBus
             }
 
             dgvStops.DataSource = stopsTable;
+            dgvStops.Columns["Αρ."].FillWeight = 8;
+            dgvStops.Columns["Όνομα Στάσης"].FillWeight = 40;
+            dgvStops.Columns["Ώρα Άφιξης"].FillWeight = 18;
+            dgvStops.Columns["Κατάσταση"].FillWeight = 34;
         }
 
         private void UpdateCurrentStopDisplay()
@@ -103,9 +107,7 @@ namespace MagicBus
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            EmployeeDashboard staffDashboard = new EmployeeDashboard();
-            staffDashboard.Show();
-            this.Close();
+            Close();
         }
     }
 }

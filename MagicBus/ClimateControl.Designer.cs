@@ -2,30 +2,20 @@
 {
     partial class ClimateControl
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
             {
                 components.Dispose();
             }
+
             base.Dispose(disposing);
         }
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             lblTitle = new Label();
@@ -38,116 +28,113 @@
             lblStatus = new Label();
             btnBack = new Button();
             SuspendLayout();
-            // 
+
             // lblTitle
-            // 
-            lblTitle.AutoSize = true;
+            lblTitle.AutoSize = false;
             lblTitle.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold);
             lblTitle.ForeColor = Color.MidnightBlue;
-            lblTitle.Location = new Point(340, 40);
+            lblTitle.Location = new Point(30, 45);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(298, 37);
+            lblTitle.Size = new Size(922, 70);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Έλεγχος Κλιματισμού";
-            // 
+            lblTitle.TextAlign = ContentAlignment.MiddleCenter;
+
             // lblTempTitle
-            // 
-            lblTempTitle.AutoSize = true;
+            lblTempTitle.AutoSize = false;
             lblTempTitle.Font = new Font("Segoe UI", 14F);
-            lblTempTitle.Location = new Point(380, 130);
+            lblTempTitle.Location = new Point(241, 155);
             lblTempTitle.Name = "lblTempTitle";
-            lblTempTitle.Size = new Size(215, 25);
+            lblTempTitle.Size = new Size(500, 45);
             lblTempTitle.TabIndex = 1;
             lblTempTitle.Text = "Θερμοκρασία Καμπίνας";
-            // 
+            lblTempTitle.TextAlign = ContentAlignment.MiddleCenter;
+
             // lblTemperature
-            // 
-            lblTemperature.AutoSize = true;
+            lblTemperature.AutoSize = false;
             lblTemperature.Font = new Font("Segoe UI", 24F, FontStyle.Bold);
             lblTemperature.ForeColor = Color.MidnightBlue;
-            lblTemperature.Location = new Point(430, 170);
+            lblTemperature.Location = new Point(411, 215);
             lblTemperature.Name = "lblTemperature";
-            lblTemperature.Size = new Size(88, 45);
+            lblTemperature.Size = new Size(160, 65);
             lblTemperature.TabIndex = 2;
             lblTemperature.Text = "22°C";
-            // 
+            lblTemperature.TextAlign = ContentAlignment.MiddleCenter;
+
             // btnTempUp
-            // 
             btnTempUp.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            btnTempUp.Location = new Point(530, 170);
+            btnTempUp.Location = new Point(591, 215);
             btnTempUp.Name = "btnTempUp";
-            btnTempUp.Size = new Size(50, 45);
-            btnTempUp.TabIndex = 3;
+            btnTempUp.Size = new Size(60, 65);
+            btnTempUp.TabIndex = 1;
             btnTempUp.Text = "+";
             btnTempUp.UseVisualStyleBackColor = true;
             btnTempUp.Click += btnTempUp_Click;
-            // 
+
             // btnTempDown
-            // 
             btnTempDown.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            btnTempDown.Location = new Point(360, 170);
+            btnTempDown.Location = new Point(331, 215);
             btnTempDown.Name = "btnTempDown";
-            btnTempDown.Size = new Size(50, 45);
-            btnTempDown.TabIndex = 4;
+            btnTempDown.Size = new Size(60, 65);
+            btnTempDown.TabIndex = 0;
             btnTempDown.Text = "-";
             btnTempDown.UseVisualStyleBackColor = true;
             btnTempDown.Click += btnTempDown_Click;
-            // 
+
             // btnAcOn
-            // 
             btnAcOn.BackColor = Color.ForestGreen;
-            btnAcOn.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            btnAcOn.FlatStyle = FlatStyle.Flat;
+            btnAcOn.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
             btnAcOn.ForeColor = Color.White;
-            btnAcOn.Location = new Point(330, 260);
+            btnAcOn.Location = new Point(291, 325);
             btnAcOn.Name = "btnAcOn";
-            btnAcOn.Size = new Size(140, 50);
-            btnAcOn.TabIndex = 5;
+            btnAcOn.Size = new Size(180, 65);
+            btnAcOn.TabIndex = 2;
             btnAcOn.Text = "A/C ON";
             btnAcOn.UseVisualStyleBackColor = false;
             btnAcOn.Click += btnAcOn_Click;
-            // 
+
             // btnAcOff
-            // 
             btnAcOff.BackColor = Color.Firebrick;
-            btnAcOff.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            btnAcOff.FlatStyle = FlatStyle.Flat;
+            btnAcOff.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
             btnAcOff.ForeColor = Color.White;
-            btnAcOff.Location = new Point(490, 260);
+            btnAcOff.Location = new Point(511, 325);
             btnAcOff.Name = "btnAcOff";
-            btnAcOff.Size = new Size(140, 50);
-            btnAcOff.TabIndex = 6;
+            btnAcOff.Size = new Size(180, 65);
+            btnAcOff.TabIndex = 3;
             btnAcOff.Text = "A/C OFF";
             btnAcOff.UseVisualStyleBackColor = false;
             btnAcOff.Click += btnAcOff_Click;
-            // 
+
             // lblStatus
-            // 
-            lblStatus.AutoSize = true;
+            lblStatus.AutoSize = false;
             lblStatus.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             lblStatus.ForeColor = Color.ForestGreen;
-            lblStatus.Location = new Point(390, 330);
+            lblStatus.Location = new Point(191, 420);
             lblStatus.Name = "lblStatus";
-            lblStatus.Size = new Size(201, 21);
+            lblStatus.Size = new Size(600, 55);
             lblStatus.TabIndex = 8;
             lblStatus.Text = "Κατάσταση: Ενεργό (ON)";
-            // 
+            lblStatus.TextAlign = ContentAlignment.MiddleCenter;
+
             // btnBack
-            // 
+            btnBack.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             btnBack.BackColor = SystemColors.Control;
             btnBack.Font = new Font("Segoe UI", 10F);
             btnBack.ForeColor = Color.Black;
-            btnBack.Location = new Point(12, 521);
+            btnBack.Location = new Point(30, 525);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(190, 48);
-            btnBack.TabIndex = 7;
-            btnBack.Text = "Επιστροφή στον 'Ελεγχο Οδηγού";
+            btnBack.Size = new Size(280, 50);
+            btnBack.TabIndex = 4;
+            btnBack.Text = "Επιστροφή στον πίνακα οδηγού";
             btnBack.UseVisualStyleBackColor = true;
             btnBack.Click += btnBack_Click;
-            // 
+
             // ClimateControl
-            // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(984, 611);
+            ClientSize = new Size(982, 603);
             Controls.Add(lblStatus);
             Controls.Add(btnBack);
             Controls.Add(btnAcOff);
@@ -158,10 +145,10 @@
             Controls.Add(lblTempTitle);
             Controls.Add(lblTitle);
             Name = "ClimateControl";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Έλεγχος Κλιματισμού - MagicBus";
             Load += ClimateControl_Load;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion

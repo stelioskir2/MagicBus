@@ -41,9 +41,9 @@
             lblTitle.AutoSize = true;
             lblTitle.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 161);
             lblTitle.ForeColor = Color.MidnightBlue;
-            lblTitle.Location = new Point(30, 25);
+            lblTitle.Location = new Point(26, 19);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(445, 46);
+            lblTitle.Size = new Size(356, 37);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Απολεσθέντα αντικείμενα";
             // 
@@ -52,9 +52,9 @@
             lblItems.AutoSize = true;
             lblItems.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 161);
             lblItems.ForeColor = Color.MidnightBlue;
-            lblItems.Location = new Point(30, 100);
+            lblItems.Location = new Point(26, 75);
             lblItems.Name = "lblItems";
-            lblItems.Size = new Size(328, 31);
+            lblItems.Size = new Size(274, 25);
             lblItems.TabIndex = 1;
             lblItems.Text = "Αντικείμενα που εντοπίστηκαν";
             // 
@@ -63,9 +63,10 @@
             lstItems.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 161);
             lstItems.FormattingEnabled = true;
             lstItems.IntegralHeight = false;
-            lstItems.Location = new Point(30, 140);
+            lstItems.Location = new Point(26, 105);
+            lstItems.Margin = new Padding(3, 2, 3, 2);
             lstItems.Name = "lstItems";
-            lstItems.Size = new Size(350, 300);
+            lstItems.Size = new Size(307, 226);
             lstItems.TabIndex = 2;
             lstItems.SelectedIndexChanged += lstItems_SelectedIndexChanged;
             // 
@@ -73,22 +74,24 @@
             // 
             txtDetails.BackColor = Color.White;
             txtDetails.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 161);
-            txtDetails.Location = new Point(420, 140);
+            txtDetails.Location = new Point(368, 105);
+            txtDetails.Margin = new Padding(3, 2, 3, 2);
             txtDetails.Multiline = true;
             txtDetails.Name = "txtDetails";
             txtDetails.ReadOnly = true;
             txtDetails.ScrollBars = ScrollBars.Vertical;
-            txtDetails.Size = new Size(520, 300);
+            txtDetails.Size = new Size(456, 226);
             txtDetails.TabIndex = 3;
             txtDetails.TabStop = false;
             txtDetails.Text = "Επιλέξτε ένα αντικείμενο για να δείτε πληροφορίες.";
             // 
             // btnBack
             // 
-            btnBack.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 161);
-            btnBack.Location = new Point(30, 530);
+            btnBack.Font = new Font("Segoe UI", 10F);
+            btnBack.Location = new Point(26, 398);
+            btnBack.Margin = new Padding(3, 2, 3, 2);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(220, 50);
+            btnBack.Size = new Size(192, 38);
             btnBack.TabIndex = 4;
             btnBack.Text = "Επιστροφή";
             btnBack.UseVisualStyleBackColor = true;
@@ -100,9 +103,10 @@
             btnHelp.FlatStyle = FlatStyle.Flat;
             btnHelp.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 161);
             btnHelp.ForeColor = Color.White;
-            btnHelp.Location = new Point(900, 25);
+            btnHelp.Location = new Point(788, 19);
+            btnHelp.Margin = new Padding(3, 2, 3, 2);
             btnHelp.Name = "btnHelp";
-            btnHelp.Size = new Size(50, 50);
+            btnHelp.Size = new Size(44, 38);
             btnHelp.TabIndex = 5;
             btnHelp.Text = "?";
             btnHelp.UseVisualStyleBackColor = false;
@@ -110,16 +114,17 @@
             // 
             // LostItems
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(982, 603);
+            ClientSize = new Size(859, 452);
             Controls.Add(btnHelp);
             Controls.Add(btnBack);
             Controls.Add(txtDetails);
             Controls.Add(lstItems);
             Controls.Add(lblItems);
             Controls.Add(lblTitle);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "LostItems";
             StartPosition = FormStartPosition.CenterParent;
             Text = "MagicBus — Απολεσθέντα";

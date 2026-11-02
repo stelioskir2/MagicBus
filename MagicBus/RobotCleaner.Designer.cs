@@ -47,9 +47,9 @@
             lblTitle.BackColor = Color.WhiteSmoke;
             lblTitle.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 161);
             lblTitle.ForeColor = Color.MidnightBlue;
-            lblTitle.Location = new Point(30, 25);
+            lblTitle.Location = new Point(26, 19);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(354, 46);
+            lblTitle.Size = new Size(285, 37);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Ρομπότ καθαρισμού";
             // 
@@ -58,9 +58,9 @@
             lblStatus.AutoSize = true;
             lblStatus.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 161);
             lblStatus.ForeColor = Color.MidnightBlue;
-            lblStatus.Location = new Point(30, 100);
+            lblStatus.Location = new Point(26, 75);
             lblStatus.Name = "lblStatus";
-            lblStatus.Size = new Size(260, 31);
+            lblStatus.Size = new Size(219, 25);
             lblStatus.TabIndex = 1;
             lblStatus.Text = "Κατάσταση: Σε αναμονή";
             // 
@@ -69,9 +69,9 @@
             lblFloor.AutoSize = true;
             lblFloor.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 161);
             lblFloor.ForeColor = Color.MidnightBlue;
-            lblFloor.Location = new Point(30, 160);
+            lblFloor.Location = new Point(26, 120);
             lblFloor.Name = "lblFloor";
-            lblFloor.Size = new Size(302, 31);
+            lblFloor.Size = new Size(253, 25);
             lblFloor.TabIndex = 2;
             lblFloor.Text = "Επιλέξτε όροφο καθαρισμού";
             // 
@@ -81,17 +81,19 @@
             cmbFloor.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 161);
             cmbFloor.FormattingEnabled = true;
             cmbFloor.Items.AddRange(new object[] { "Κάτω όροφος", "Επάνω όροφος" });
-            cmbFloor.Location = new Point(30, 200);
+            cmbFloor.Location = new Point(26, 150);
+            cmbFloor.Margin = new Padding(3, 2, 3, 2);
             cmbFloor.Name = "cmbFloor";
-            cmbFloor.Size = new Size(350, 39);
+            cmbFloor.Size = new Size(307, 33);
             cmbFloor.TabIndex = 3;
             // 
             // btnBack
             // 
-            btnBack.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 161);
-            btnBack.Location = new Point(30, 530);
+            btnBack.Font = new Font("Segoe UI", 10F);
+            btnBack.Location = new Point(26, 398);
+            btnBack.Margin = new Padding(3, 2, 3, 2);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(220, 50);
+            btnBack.Size = new Size(192, 38);
             btnBack.TabIndex = 4;
             btnBack.Text = "Επιστροφή";
             btnBack.UseVisualStyleBackColor = true;
@@ -101,9 +103,10 @@
             // 
             btnStop.Enabled = false;
             btnStop.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 161);
-            btnStop.Location = new Point(340, 280);
+            btnStop.Location = new Point(298, 210);
+            btnStop.Margin = new Padding(3, 2, 3, 2);
             btnStop.Name = "btnStop";
-            btnStop.Size = new Size(280, 60);
+            btnStop.Size = new Size(245, 45);
             btnStop.TabIndex = 5;
             btnStop.Text = "Διακοπή καθαρισμού";
             btnStop.UseVisualStyleBackColor = true;
@@ -112,9 +115,10 @@
             // btnStart
             // 
             btnStart.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 161);
-            btnStart.Location = new Point(30, 280);
+            btnStart.Location = new Point(26, 210);
+            btnStart.Margin = new Padding(3, 2, 3, 2);
             btnStart.Name = "btnStart";
-            btnStart.Size = new Size(280, 60);
+            btnStart.Size = new Size(245, 45);
             btnStart.TabIndex = 6;
             btnStart.Text = "Έναρξη καθαρισμού";
             btnStart.UseVisualStyleBackColor = true;
@@ -122,18 +126,19 @@
             // 
             // progressCleaning
             // 
-            progressCleaning.Location = new Point(30, 380);
+            progressCleaning.Location = new Point(26, 285);
+            progressCleaning.Margin = new Padding(3, 2, 3, 2);
             progressCleaning.Name = "progressCleaning";
-            progressCleaning.Size = new Size(590, 35);
+            progressCleaning.Size = new Size(516, 26);
             progressCleaning.TabIndex = 7;
             // 
             // lblProgress
             // 
             lblProgress.AutoSize = true;
             lblProgress.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 161);
-            lblProgress.Location = new Point(30, 430);
+            lblProgress.Location = new Point(26, 322);
             lblProgress.Name = "lblProgress";
-            lblProgress.Size = new Size(148, 31);
+            lblProgress.Size = new Size(125, 25);
             lblProgress.TabIndex = 8;
             lblProgress.Text = "Πρόοδος: 0%";
             // 
@@ -144,10 +149,10 @@
             // 
             // RobotCleaner
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(982, 603);
+            ClientSize = new Size(859, 452);
             Controls.Add(lblProgress);
             Controls.Add(progressCleaning);
             Controls.Add(btnStart);
@@ -157,6 +162,7 @@
             Controls.Add(lblFloor);
             Controls.Add(lblStatus);
             Controls.Add(lblTitle);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "RobotCleaner";
             StartPosition = FormStartPosition.CenterParent;
             Text = "MagicBus — Ρομπότ καθαρισμού";

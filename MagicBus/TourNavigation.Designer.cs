@@ -43,9 +43,9 @@
             // 
             lblCategory.AutoSize = true;
             lblCategory.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 161);
-            lblCategory.Location = new Point(30, 100);
+            lblCategory.Location = new Point(26, 75);
             lblCategory.Name = "lblCategory";
-            lblCategory.Size = new Size(342, 31);
+            lblCategory.Size = new Size(287, 25);
             lblCategory.TabIndex = 0;
             lblCategory.Text = "Επιλέξτε κατηγορία προορισμού";
             // 
@@ -55,9 +55,10 @@
             cmbCategory.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 161);
             cmbCategory.FormattingEnabled = true;
             cmbCategory.Items.AddRange(new object[] { "Αξιοθέατα", "Εστιατόρια (ενδεικτικά)", "Στάσεις λεωφορείου" });
-            cmbCategory.Location = new Point(30, 140);
+            cmbCategory.Location = new Point(26, 105);
+            cmbCategory.Margin = new Padding(3, 2, 3, 2);
             cmbCategory.Name = "cmbCategory";
-            cmbCategory.Size = new Size(350, 39);
+            cmbCategory.Size = new Size(307, 33);
             cmbCategory.TabIndex = 1;
             cmbCategory.SelectedIndexChanged += cmbCategory_SelectedIndexChanged;
             // 
@@ -66,9 +67,9 @@
             lblTitle.AutoSize = true;
             lblTitle.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 161);
             lblTitle.ForeColor = Color.MidnightBlue;
-            lblTitle.Location = new Point(30, 25);
+            lblTitle.Location = new Point(26, 19);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(352, 46);
+            lblTitle.Size = new Size(282, 37);
             lblTitle.TabIndex = 2;
             lblTitle.Text = "Πού θέλετε να πάτε;";
             // 
@@ -76,17 +77,20 @@
             // 
             lstDestinations.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 161);
             lstDestinations.FormattingEnabled = true;
-            lstDestinations.Location = new Point(30, 210);
+            lstDestinations.Location = new Point(26, 158);
+            lstDestinations.Margin = new Padding(3, 2, 3, 2);
             lstDestinations.Name = "lstDestinations";
-            lstDestinations.Size = new Size(350, 221);
+            lstDestinations.Size = new Size(307, 154);
             lstDestinations.TabIndex = 3;
             lstDestinations.SelectedIndexChanged += lstDestinations_SelectedIndexChanged;
             // 
             // btnBack
             // 
-            btnBack.Location = new Point(30, 530);
+            btnBack.Font = new Font("Segoe UI", 10F);
+            btnBack.Location = new Point(26, 398);
+            btnBack.Margin = new Padding(3, 2, 3, 2);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(220, 50);
+            btnBack.Size = new Size(192, 38);
             btnBack.TabIndex = 4;
             btnBack.Text = "Επιστροφή στο μενού";
             btnBack.UseVisualStyleBackColor = true;
@@ -94,9 +98,10 @@
             // 
             // btnNavigate
             // 
-            btnNavigate.Location = new Point(420, 400);
+            btnNavigate.Location = new Point(368, 300);
+            btnNavigate.Margin = new Padding(3, 2, 3, 2);
             btnNavigate.Name = "btnNavigate";
-            btnNavigate.Size = new Size(300, 60);
+            btnNavigate.Size = new Size(262, 45);
             btnNavigate.TabIndex = 5;
             btnNavigate.Text = "Έναρξη πλοήγησης";
             btnNavigate.UseVisualStyleBackColor = true;
@@ -105,9 +110,9 @@
             // 
             lblStart.AutoSize = true;
             lblStart.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 161);
-            lblStart.Location = new Point(420, 210);
+            lblStart.Location = new Point(368, 158);
             lblStart.Name = "lblStart";
-            lblStart.Size = new Size(275, 31);
+            lblStart.Size = new Size(230, 25);
             lblStart.TabIndex = 6;
             lblStart.Text = "Από ποια στάση ξεκινάτε;";
             // 
@@ -117,9 +122,10 @@
             cmbStart.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 161);
             cmbStart.FormattingEnabled = true;
             cmbStart.Items.AddRange(new object[] { "Λευκός Πύργος", "Πλατεία Αριστοτέλους", "Πλατεία Ελευθερίας", "Άγιος Δημήτριος", "Ροτόντα", "Καμάρα" });
-            cmbStart.Location = new Point(420, 250);
+            cmbStart.Location = new Point(368, 188);
+            cmbStart.Margin = new Padding(3, 2, 3, 2);
             cmbStart.Name = "cmbStart";
-            cmbStart.Size = new Size(450, 39);
+            cmbStart.Size = new Size(394, 33);
             cmbStart.TabIndex = 7;
             cmbStart.SelectedIndexChanged += cmbStart_SelectedIndexChanged;
             // 
@@ -129,9 +135,10 @@
             btnHelp.FlatStyle = FlatStyle.Flat;
             btnHelp.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 161);
             btnHelp.ForeColor = Color.White;
-            btnHelp.Location = new Point(900, 25);
+            btnHelp.Location = new Point(788, 19);
+            btnHelp.Margin = new Padding(3, 2, 3, 2);
             btnHelp.Name = "btnHelp";
-            btnHelp.Size = new Size(50, 50);
+            btnHelp.Size = new Size(44, 38);
             btnHelp.TabIndex = 8;
             btnHelp.Text = "?";
             btnHelp.UseVisualStyleBackColor = false;
@@ -139,10 +146,10 @@
             // 
             // TourNavigation
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(982, 603);
+            ClientSize = new Size(859, 452);
             Controls.Add(btnHelp);
             Controls.Add(cmbStart);
             Controls.Add(lblStart);
@@ -152,6 +159,7 @@
             Controls.Add(lblTitle);
             Controls.Add(cmbCategory);
             Controls.Add(lblCategory);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "TourNavigation";
             StartPosition = FormStartPosition.CenterParent;
             Text = "MagicBus — Τουριστική πλοήγηση";

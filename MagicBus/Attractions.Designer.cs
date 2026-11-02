@@ -73,7 +73,7 @@
             // 
             // btnBack
             // 
-            btnBack.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 161);
+            btnBack.Font = new Font("Segoe UI", 10F);
             btnBack.Location = new Point(12, 562);
             btnBack.Margin = new Padding(3, 2, 3, 2);
             btnBack.Name = "btnBack";

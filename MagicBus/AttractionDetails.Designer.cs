@@ -43,18 +43,19 @@
             lblTitle.AutoSize = true;
             lblTitle.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 161);
             lblTitle.ForeColor = Color.MidnightBlue;
-            lblTitle.Location = new Point(30, 25);
+            lblTitle.Location = new Point(26, 19);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(439, 46);
+            lblTitle.Size = new Size(352, 37);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Πληροφορίες αξιοθέατου";
             // 
             // picAttraction
             // 
             picAttraction.BorderStyle = BorderStyle.FixedSingle;
-            picAttraction.Location = new Point(30, 110);
+            picAttraction.Location = new Point(26, 82);
+            picAttraction.Margin = new Padding(3, 2, 3, 2);
             picAttraction.Name = "picAttraction";
-            picAttraction.Size = new Size(400, 300);
+            picAttraction.Size = new Size(350, 226);
             picAttraction.SizeMode = PictureBoxSizeMode.Zoom;
             picAttraction.TabIndex = 1;
             picAttraction.TabStop = false;
@@ -63,20 +64,22 @@
             // 
             txtDescription.BackColor = Color.White;
             txtDescription.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 161);
-            txtDescription.Location = new Point(460, 110);
+            txtDescription.Location = new Point(402, 82);
+            txtDescription.Margin = new Padding(3, 2, 3, 2);
             txtDescription.Multiline = true;
             txtDescription.Name = "txtDescription";
             txtDescription.ReadOnly = true;
             txtDescription.ScrollBars = ScrollBars.Vertical;
-            txtDescription.Size = new Size(480, 300);
+            txtDescription.Size = new Size(420, 226);
             txtDescription.TabIndex = 1;
             // 
             // btnBack
             // 
-            btnBack.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 161);
-            btnBack.Location = new Point(30, 530);
+            btnBack.Font = new Font("Segoe UI", 10F);
+            btnBack.Location = new Point(26, 398);
+            btnBack.Margin = new Padding(3, 2, 3, 2);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(260, 50);
+            btnBack.Size = new Size(228, 38);
             btnBack.TabIndex = 0;
             btnBack.Text = "Επιστροφή στα αξιοθέατα";
             btnBack.UseVisualStyleBackColor = true;
@@ -85,9 +88,10 @@
             // btnPlay
             // 
             btnPlay.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 161);
-            btnPlay.Location = new Point(460, 440);
+            btnPlay.Location = new Point(402, 330);
+            btnPlay.Margin = new Padding(3, 2, 3, 2);
             btnPlay.Name = "btnPlay";
-            btnPlay.Size = new Size(280, 50);
+            btnPlay.Size = new Size(245, 38);
             btnPlay.TabIndex = 2;
             btnPlay.Text = "Ακούστε την περιγραφή";
             btnPlay.UseVisualStyleBackColor = true;
@@ -96,9 +100,10 @@
             // btnStop
             // 
             btnStop.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 161);
-            btnStop.Location = new Point(760, 440);
+            btnStop.Location = new Point(665, 330);
+            btnStop.Margin = new Padding(3, 2, 3, 2);
             btnStop.Name = "btnStop";
-            btnStop.Size = new Size(180, 50);
+            btnStop.Size = new Size(158, 38);
             btnStop.TabIndex = 3;
             btnStop.Text = "Διακοπή";
             btnStop.UseVisualStyleBackColor = true;
@@ -110,9 +115,10 @@
             btnHelp.FlatStyle = FlatStyle.Flat;
             btnHelp.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 161);
             btnHelp.ForeColor = Color.White;
-            btnHelp.Location = new Point(890, 25);
+            btnHelp.Location = new Point(779, 19);
+            btnHelp.Margin = new Padding(3, 2, 3, 2);
             btnHelp.Name = "btnHelp";
-            btnHelp.Size = new Size(50, 50);
+            btnHelp.Size = new Size(44, 38);
             btnHelp.TabIndex = 4;
             btnHelp.Text = "?";
             btnHelp.UseVisualStyleBackColor = false;
@@ -120,10 +126,10 @@
             // 
             // AttractionDetails
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(982, 603);
+            ClientSize = new Size(859, 452);
             Controls.Add(btnHelp);
             Controls.Add(btnStop);
             Controls.Add(btnPlay);
@@ -131,6 +137,7 @@
             Controls.Add(txtDescription);
             Controls.Add(picAttraction);
             Controls.Add(lblTitle);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "AttractionDetails";
             StartPosition = FormStartPosition.CenterParent;
             Text = "MagicBus — Πληροφορίες αξιοθέατου";

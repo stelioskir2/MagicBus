@@ -40,9 +40,9 @@
             lblTitle.AutoSize = true;
             lblTitle.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 161);
             lblTitle.ForeColor = Color.MidnightBlue;
-            lblTitle.Location = new Point(30, 25);
+            lblTitle.Location = new Point(26, 19);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(269, 46);
+            lblTitle.Size = new Size(215, 37);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Θέα διαδρομής";
             // 
@@ -51,19 +51,21 @@
             webVideo.AllowExternalDrop = true;
             webVideo.CreationProperties = null;
             webVideo.DefaultBackgroundColor = Color.White;
-            webVideo.Location = new Point(30, 100);
+            webVideo.Location = new Point(26, 75);
+            webVideo.Margin = new Padding(3, 2, 3, 2);
             webVideo.Name = "webVideo";
-            webVideo.Size = new Size(920, 400);
+            webVideo.Size = new Size(805, 300);
             webVideo.TabIndex = 1;
             webVideo.ZoomFactor = 1D;
             webVideo.Click += webVideo_Click;
             // 
             // btnBack
             // 
-            btnBack.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 161);
-            btnBack.Location = new Point(30, 530);
+            btnBack.Font = new Font("Segoe UI", 10F);
+            btnBack.Location = new Point(26, 398);
+            btnBack.Margin = new Padding(3, 2, 3, 2);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(220, 50);
+            btnBack.Size = new Size(192, 38);
             btnBack.TabIndex = 2;
             btnBack.Text = "Επιστροφή στο μενού";
             btnBack.UseVisualStyleBackColor = true;
@@ -75,9 +77,10 @@
             btnHelp.FlatStyle = FlatStyle.Flat;
             btnHelp.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 161);
             btnHelp.ForeColor = Color.White;
-            btnHelp.Location = new Point(900, 25);
+            btnHelp.Location = new Point(788, 19);
+            btnHelp.Margin = new Padding(3, 2, 3, 2);
             btnHelp.Name = "btnHelp";
-            btnHelp.Size = new Size(50, 50);
+            btnHelp.Size = new Size(44, 38);
             btnHelp.TabIndex = 3;
             btnHelp.Text = "?";
             btnHelp.UseVisualStyleBackColor = false;
@@ -85,14 +88,15 @@
             // 
             // RouteView
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(982, 603);
+            ClientSize = new Size(859, 452);
             Controls.Add(btnHelp);
             Controls.Add(btnBack);
             Controls.Add(webVideo);
             Controls.Add(lblTitle);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "RouteView";
             StartPosition = FormStartPosition.CenterParent;
             Text = "MagicBus — Θέα διαδρομής";

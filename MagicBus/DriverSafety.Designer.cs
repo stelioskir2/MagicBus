@@ -45,150 +45,156 @@
             ((System.ComponentModel.ISupportInitialize)trkSpeed).BeginInit();
             pnlAlert.SuspendLayout();
             SuspendLayout();
-            //
+            // 
             // lblTitle
-            //
+            // 
             lblTitle.AutoSize = true;
             lblTitle.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 161);
             lblTitle.ForeColor = Color.MidnightBlue;
-            lblTitle.Location = new Point(30, 25);
+            lblTitle.Location = new Point(26, 19);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(375, 46);
+            lblTitle.Size = new Size(325, 37);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Ειδοποιήσεις οδήγησης";
-            //
+            // 
             // lblSpeedTitle
-            //
+            // 
             lblSpeedTitle.AutoSize = true;
             lblSpeedTitle.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 161);
-            lblSpeedTitle.Location = new Point(30, 90);
+            lblSpeedTitle.Location = new Point(26, 68);
             lblSpeedTitle.Name = "lblSpeedTitle";
-            lblSpeedTitle.Size = new Size(200, 28);
+            lblSpeedTitle.Size = new Size(182, 21);
             lblSpeedTitle.TabIndex = 1;
             lblSpeedTitle.Text = "Ταχύτητα λεωφορείου";
-            //
+            // 
             // lblSpeed
-            //
+            // 
             lblSpeed.Font = new Font("Segoe UI", 28.2F, FontStyle.Bold, GraphicsUnit.Point, 161);
             lblSpeed.ForeColor = Color.MidnightBlue;
-            lblSpeed.Location = new Point(30, 120);
+            lblSpeed.Location = new Point(26, 90);
             lblSpeed.Name = "lblSpeed";
-            lblSpeed.Size = new Size(250, 65);
+            lblSpeed.Size = new Size(219, 49);
             lblSpeed.TabIndex = 2;
             lblSpeed.Text = "0 km/h";
-            //
+            // 
             // lblLimit
-            //
+            // 
             lblLimit.AutoSize = true;
             lblLimit.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 161);
-            lblLimit.Location = new Point(300, 145);
+            lblLimit.Location = new Point(262, 109);
             lblLimit.Name = "lblLimit";
-            lblLimit.Size = new Size(133, 28);
+            lblLimit.Size = new Size(111, 21);
             lblLimit.TabIndex = 3;
             lblLimit.Text = "Όριο: 50 km/h";
-            //
+            // 
             // trkSpeed
-            //
+            // 
             trkSpeed.LargeChange = 10;
-            trkSpeed.Location = new Point(30, 195);
+            trkSpeed.Location = new Point(26, 146);
+            trkSpeed.Margin = new Padding(3, 2, 3, 2);
             trkSpeed.Maximum = 100;
             trkSpeed.Name = "trkSpeed";
-            trkSpeed.Size = new Size(420, 56);
+            trkSpeed.Size = new Size(368, 45);
             trkSpeed.SmallChange = 5;
             trkSpeed.TabIndex = 4;
             trkSpeed.TickFrequency = 10;
             trkSpeed.ValueChanged += trkSpeed_ValueChanged;
-            //
+            // 
             // btnLane
-            //
+            // 
             btnLane.BackColor = Color.MidnightBlue;
             btnLane.FlatStyle = FlatStyle.Flat;
             btnLane.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 161);
             btnLane.ForeColor = Color.White;
-            btnLane.Location = new Point(30, 280);
+            btnLane.Location = new Point(26, 210);
+            btnLane.Margin = new Padding(3, 2, 3, 2);
             btnLane.Name = "btnLane";
-            btnLane.Size = new Size(420, 55);
+            btnLane.Size = new Size(368, 41);
             btnLane.TabIndex = 5;
             btnLane.Text = "Προσομοίωση εξόδου από λωρίδα";
             btnLane.UseVisualStyleBackColor = false;
             btnLane.Click += btnLane_Click;
-            //
+            // 
             // btnFatigue
-            //
+            // 
             btnFatigue.BackColor = Color.MidnightBlue;
             btnFatigue.FlatStyle = FlatStyle.Flat;
             btnFatigue.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 161);
             btnFatigue.ForeColor = Color.White;
-            btnFatigue.Location = new Point(30, 350);
+            btnFatigue.Location = new Point(26, 262);
+            btnFatigue.Margin = new Padding(3, 2, 3, 2);
             btnFatigue.Name = "btnFatigue";
-            btnFatigue.Size = new Size(420, 55);
+            btnFatigue.Size = new Size(368, 41);
             btnFatigue.TabIndex = 6;
             btnFatigue.Text = "Προσομοίωση κόπωσης οδηγού";
             btnFatigue.UseVisualStyleBackColor = false;
             btnFatigue.Click += btnFatigue_Click;
-            //
+            // 
             // pnlAlert
-            //
+            // 
             pnlAlert.BackColor = Color.SeaGreen;
             pnlAlert.Controls.Add(lblAlert);
-            pnlAlert.Location = new Point(490, 90);
+            pnlAlert.Location = new Point(429, 68);
+            pnlAlert.Margin = new Padding(3, 2, 3, 2);
             pnlAlert.Name = "pnlAlert";
-            pnlAlert.Size = new Size(460, 200);
+            pnlAlert.Size = new Size(402, 150);
             pnlAlert.TabIndex = 7;
-            //
+            // 
             // lblAlert
-            //
+            // 
             lblAlert.Dock = DockStyle.Fill;
             lblAlert.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 161);
             lblAlert.ForeColor = Color.White;
             lblAlert.Location = new Point(0, 0);
             lblAlert.Name = "lblAlert";
-            lblAlert.Size = new Size(460, 200);
+            lblAlert.Size = new Size(402, 150);
             lblAlert.TabIndex = 0;
             lblAlert.Text = "Όλα κανονικά";
             lblAlert.TextAlign = ContentAlignment.MiddleCenter;
-            //
+            // 
             // lblHistory
-            //
+            // 
             lblHistory.AutoSize = true;
             lblHistory.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 161);
-            lblHistory.Location = new Point(490, 305);
+            lblHistory.Location = new Point(429, 229);
             lblHistory.Name = "lblHistory";
-            lblHistory.Size = new Size(221, 28);
+            lblHistory.Size = new Size(189, 21);
             lblHistory.TabIndex = 8;
             lblHistory.Text = "Ιστορικό ειδοποιήσεων";
-            //
+            // 
             // lstAlerts
-            //
+            // 
             lstAlerts.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 161);
             lstAlerts.FormattingEnabled = true;
-            lstAlerts.Location = new Point(490, 340);
+            lstAlerts.Location = new Point(429, 255);
+            lstAlerts.Margin = new Padding(3, 2, 3, 2);
             lstAlerts.Name = "lstAlerts";
-            lstAlerts.Size = new Size(460, 154);
+            lstAlerts.Size = new Size(403, 99);
             lstAlerts.TabIndex = 9;
-            //
+            // 
             // btnBack
-            //
-            btnBack.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 161);
-            btnBack.Location = new Point(30, 530);
+            // 
+            btnBack.Font = new Font("Segoe UI", 10F);
+            btnBack.Location = new Point(26, 398);
+            btnBack.Margin = new Padding(3, 2, 3, 2);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(300, 50);
+            btnBack.Size = new Size(262, 38);
             btnBack.TabIndex = 10;
             btnBack.Text = "Επιστροφή στον πίνακα οδηγού";
             btnBack.UseVisualStyleBackColor = true;
             btnBack.Click += btnBack_Click;
-            //
+            // 
             // timerAlert
-            //
+            // 
             timerAlert.Interval = 5000;
             timerAlert.Tick += timerAlert_Tick;
-            //
+            // 
             // DriverSafety
-            //
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(982, 603);
+            ClientSize = new Size(859, 452);
             Controls.Add(btnBack);
             Controls.Add(lstAlerts);
             Controls.Add(lblHistory);
@@ -200,6 +206,7 @@
             Controls.Add(lblSpeed);
             Controls.Add(lblSpeedTitle);
             Controls.Add(lblTitle);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "DriverSafety";
             StartPosition = FormStartPosition.CenterParent;
             Text = "MagicBus — Ειδοποιήσεις οδήγησης";

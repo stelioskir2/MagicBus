@@ -34,10 +34,9 @@
             btnPassengers.FlatStyle = FlatStyle.Flat;
             btnPassengers.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             btnPassengers.ForeColor = Color.White;
-            btnPassengers.Location = new Point(222, 215);
-            btnPassengers.Margin = new Padding(3, 4, 3, 4);
+            btnPassengers.Location = new Point(194, 161);
             btnPassengers.Name = "btnPassengers";
-            btnPassengers.Size = new Size(320, 107);
+            btnPassengers.Size = new Size(280, 80);
             btnPassengers.TabIndex = 0;
             btnPassengers.Text = "Διαχείριση Επιβατών";
             btnPassengers.UseVisualStyleBackColor = false;
@@ -49,10 +48,9 @@
             btnBusStatus.FlatStyle = FlatStyle.Flat;
             btnBusStatus.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             btnBusStatus.ForeColor = Color.White;
-            btnBusStatus.Location = new Point(582, 215);
-            btnBusStatus.Margin = new Padding(3, 4, 3, 4);
+            btnBusStatus.Location = new Point(509, 161);
             btnBusStatus.Name = "btnBusStatus";
-            btnBusStatus.Size = new Size(320, 107);
+            btnBusStatus.Size = new Size(280, 80);
             btnBusStatus.TabIndex = 1;
             btnBusStatus.Text = "Κατάσταση Λεωφορείου";
             btnBusStatus.UseVisualStyleBackColor = false;
@@ -64,10 +62,9 @@
             btnSchedule.FlatStyle = FlatStyle.Flat;
             btnSchedule.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             btnSchedule.ForeColor = Color.White;
-            btnSchedule.Location = new Point(222, 360);
-            btnSchedule.Margin = new Padding(3, 4, 3, 4);
+            btnSchedule.Location = new Point(194, 270);
             btnSchedule.Name = "btnSchedule";
-            btnSchedule.Size = new Size(320, 107);
+            btnSchedule.Size = new Size(280, 80);
             btnSchedule.TabIndex = 2;
             btnSchedule.Text = "Προγραμματισμός και Στάσεις";
             btnSchedule.UseVisualStyleBackColor = false;
@@ -78,10 +75,9 @@
             btnBack.BackColor = SystemColors.Control;
             btnBack.Font = new Font("Segoe UI", 10F);
             btnBack.ForeColor = Color.Black;
-            btnBack.Location = new Point(14, 695);
-            btnBack.Margin = new Padding(3, 4, 3, 4);
+            btnBack.Location = new Point(12, 521);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(217, 69);
+            btnBack.Size = new Size(190, 52);
             btnBack.TabIndex = 3;
             btnBack.Text = "Επιστροφή στην επιλογή ρόλου";
             btnBack.UseVisualStyleBackColor = true;
@@ -92,9 +88,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold);
             label1.ForeColor = Color.MidnightBlue;
-            label1.Location = new Point(304, 110);
+            label1.Location = new Point(266, 82);
             label1.Name = "label1";
-            label1.Size = new Size(516, 46);
+            label1.Size = new Size(414, 37);
             label1.TabIndex = 4;
             label1.Text = "Πίνακας Ελέγχου Προσωπικού";
             // 
@@ -104,9 +100,10 @@
             btnRobot.FlatStyle = FlatStyle.Flat;
             btnRobot.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 161);
             btnRobot.ForeColor = Color.White;
-            btnRobot.Location = new Point(582, 360);
+            btnRobot.Location = new Point(509, 270);
+            btnRobot.Margin = new Padding(3, 2, 3, 2);
             btnRobot.Name = "btnRobot";
-            btnRobot.Size = new Size(320, 107);
+            btnRobot.Size = new Size(280, 80);
             btnRobot.TabIndex = 5;
             btnRobot.Text = "Ρομπότ καθαρισμού";
             btnRobot.UseVisualStyleBackColor = false;
@@ -116,9 +113,9 @@
             // 
             lblFoundItems.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 161);
             lblFoundItems.ForeColor = Color.MidnightBlue;
-            lblFoundItems.Location = new Point(920, 360);
+            lblFoundItems.Location = new Point(805, 270);
             lblFoundItems.Name = "lblFoundItems";
-            lblFoundItems.Size = new Size(190, 140);
+            lblFoundItems.Size = new Size(166, 105);
             lblFoundItems.TabIndex = 7;
             lblFoundItems.Text = "Σημερινά ευρήματα: 0";
             // 
@@ -128,10 +125,9 @@
             btnCafeOrders.FlatStyle = FlatStyle.Flat;
             btnCafeOrders.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             btnCafeOrders.ForeColor = Color.White;
-            btnCafeOrders.Location = new Point(402, 505);
-            btnCafeOrders.Margin = new Padding(3, 4, 3, 4);
+            btnCafeOrders.Location = new Point(352, 379);
             btnCafeOrders.Name = "btnCafeOrders";
-            btnCafeOrders.Size = new Size(320, 107);
+            btnCafeOrders.Size = new Size(280, 80);
             btnCafeOrders.TabIndex = 6;
             btnCafeOrders.Text = "Παραγγελίες Καφετέριας";
             btnCafeOrders.UseVisualStyleBackColor = false;
@@ -139,11 +135,12 @@
             // 
             // btnCompanyNotifications
             // 
-            btnCompanyNotifications.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 161);
+            btnCompanyNotifications.Font = new Font("Segoe UI", 10F);
             btnCompanyNotifications.ForeColor = Color.MidnightBlue;
-            btnCompanyNotifications.Location = new Point(14, 600);
+            btnCompanyNotifications.Location = new Point(12, 450);
+            btnCompanyNotifications.Margin = new Padding(3, 2, 3, 2);
             btnCompanyNotifications.Name = "btnCompanyNotifications";
-            btnCompanyNotifications.Size = new Size(300, 70);
+            btnCompanyNotifications.Size = new Size(262, 52);
             btnCompanyNotifications.TabIndex = 8;
             btnCompanyNotifications.Text = "Ενημέρωση εταιρείας";
             btnCompanyNotifications.UseVisualStyleBackColor = true;
@@ -151,9 +148,9 @@
             // 
             // EmployeeDashboard
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1125, 815);
+            ClientSize = new Size(984, 611);
             Controls.Add(btnCompanyNotifications);
             Controls.Add(lblFoundItems);
             Controls.Add(btnCafeOrders);
@@ -163,7 +160,6 @@
             Controls.Add(btnSchedule);
             Controls.Add(btnBusStatus);
             Controls.Add(btnPassengers);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "EmployeeDashboard";
             Text = "MagicBus - Πίνακας Ελέγχου Προσωπικού";
             ResumeLayout(false);
